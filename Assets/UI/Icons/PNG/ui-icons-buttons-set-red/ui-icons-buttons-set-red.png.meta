@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 5402a02cb5b0c5740a09ba8a351ae697
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3558666442675237471
+    second: ui-icons-buttons-set-red_0
+  - first:
+      213: 3212487816941899804
+    second: ui-icons-buttons-set-red_1
+  - first:
+      213: 7511332727406566867
+    second: ui-icons-buttons-set-red_2
+  - first:
+      213: -4639766692395993130
+    second: ui-icons-buttons-set-red_3
+  - first:
+      213: 5768165727755288645
+    second: ui-icons-buttons-set-red_4
+  - first:
+      213: -8427727361179643663
+    second: ui-icons-buttons-set-red_5
+  - first:
+      213: -296215139799197453
+    second: ui-icons-buttons-set-red_6
+  - first:
+      213: 391244165902128626
+    second: ui-icons-buttons-set-red_7
+  - first:
+      213: 2526834628218745917
+    second: ui-icons-buttons-set-red_8
+  - first:
+      213: -7119591192684639908
+    second: ui-icons-buttons-set-red_9
+  - first:
+      213: 4388151608315845881
+    second: ui-icons-buttons-set-red_10
+  - first:
+      213: -1343827111999377129
+    second: ui-icons-buttons-set-red_11
+  - first:
+      213: -4638523746063405834
+    second: ui-icons-buttons-set-red_12
+  - first:
+      213: 6090398339964982918
+    second: ui-icons-buttons-set-red_13
+  - first:
+      213: -3844402260499728259
+    second: ui-icons-buttons-set-red_14
+  - first:
+      213: -8615608410799907609
+    second: ui-icons-buttons-set-red_15
+  - first:
+      213: -1442530649944325436
+    second: ui-icons-buttons-set-red_16
+  - first:
+      213: 45244145743968969
+    second: ui-icons-buttons-set-red_17
+  - first:
+      213: 5730398833323056659
+    second: ui-icons-buttons-set-red_18
+  - first:
+      213: -8813419316655968753
+    second: ui-icons-buttons-set-red_19
+  - first:
+      213: -5634499520148097812
+    second: ui-icons-buttons-set-red_20
+  - first:
+      213: 1355015723578782377
+    second: ui-icons-buttons-set-red_21
+  - first:
+      213: 5087963733864592223
+    second: ui-icons-buttons-set-red_22
+  - first:
+      213: 6255699548440092967
+    second: ui-icons-buttons-set-red_23
+  - first:
+      213: 6250431795286932913
+    second: ui-icons-buttons-set-red_24
+  - first:
+      213: -5135431433875756776
+    second: ui-icons-buttons-set-red_25
+  - first:
+      213: -2911980635789738961
+    second: ui-icons-buttons-set-red_26
+  - first:
+      213: 4702843986089054769
+    second: ui-icons-buttons-set-red_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52b2c5664ce26130800000000000000
+      internalID: 3558666442675237471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10971626ac059c20800000000000000
+      internalID: 3212487816941899804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd95de915d9d3860800000000000000
+      internalID: 7511332727406566867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d73c0b96cc3c9fb0800000000000000
+      internalID: -4639766692395993130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_4
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 413
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540cf681b24ac0050800000000000000
+      internalID: 5768165727755288645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 413
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f01c05fd92ba0b80800000000000000
+      internalID: -8427727361179643663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_6
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 413
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f81d2756e1a3ebf0800000000000000
+      internalID: -296215139799197453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_7
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f55a09fe7afd6500800000000000000
+      internalID: 391244165902128626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d347225e4be111320800000000000000
+      internalID: 2526834628218745917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59480e0881223d90800000000000000
+      internalID: -7119591192684639908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_10
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc993a63a8d5ec30800000000000000
+      internalID: 4388151608315845881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_11
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 283
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711fcbd8c54c95de0800000000000000
+      internalID: -1343827111999377129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_12
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 283
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc2da99a37a0afb0800000000000000
+      internalID: -4638523746063405834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_13
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 283
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686dd3a9501758450800000000000000
+      internalID: 6090398339964982918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7874393380f5aac0800000000000000
+      internalID: -3844402260499728259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec576e3cc53f6880800000000000000
+      internalID: -8615608410799907609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c28478440a1bfbe0800000000000000
+      internalID: -1442530649944325436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_17
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca3c339f4db0a000800000000000000
+      internalID: 45244145743968969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_18
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 153
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e9881c067768f40800000000000000
+      internalID: 5730398833323056659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_19
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 153
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ea726b3d170b580800000000000000
+      internalID: -8813419316655968753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_20
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 153
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4b67e0a8c3ec1b0800000000000000
+      internalID: -5634499520148097812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_21
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a27bf41f9bfdc210800000000000000
+      internalID: 1355015723578782377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53b11b0f041c9640800000000000000
+      internalID: 5087963733864592223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_23
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721e75e5895b0d650800000000000000
+      internalID: 6255699548440092967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_24
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd72e20a9efdb650800000000000000
+      internalID: 6250431795286932913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_25
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 23
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819e57fc1584bb8b0800000000000000
+      internalID: -5135431433875756776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_26
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 23
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2cbfe24a019697d0800000000000000
+      internalID: -2911980635789738961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-red_27
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 23
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1329be840bbd34140800000000000000
+      internalID: 4702843986089054769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ui-icons-buttons-set-red_0: 3558666442675237471
+      ui-icons-buttons-set-red_1: 3212487816941899804
+      ui-icons-buttons-set-red_10: 4388151608315845881
+      ui-icons-buttons-set-red_11: -1343827111999377129
+      ui-icons-buttons-set-red_12: -4638523746063405834
+      ui-icons-buttons-set-red_13: 6090398339964982918
+      ui-icons-buttons-set-red_14: -3844402260499728259
+      ui-icons-buttons-set-red_15: -8615608410799907609
+      ui-icons-buttons-set-red_16: -1442530649944325436
+      ui-icons-buttons-set-red_17: 45244145743968969
+      ui-icons-buttons-set-red_18: 5730398833323056659
+      ui-icons-buttons-set-red_19: -8813419316655968753
+      ui-icons-buttons-set-red_2: 7511332727406566867
+      ui-icons-buttons-set-red_20: -5634499520148097812
+      ui-icons-buttons-set-red_21: 1355015723578782377
+      ui-icons-buttons-set-red_22: 5087963733864592223
+      ui-icons-buttons-set-red_23: 6255699548440092967
+      ui-icons-buttons-set-red_24: 6250431795286932913
+      ui-icons-buttons-set-red_25: -5135431433875756776
+      ui-icons-buttons-set-red_26: -2911980635789738961
+      ui-icons-buttons-set-red_27: 4702843986089054769
+      ui-icons-buttons-set-red_3: -4639766692395993130
+      ui-icons-buttons-set-red_4: 5768165727755288645
+      ui-icons-buttons-set-red_5: -8427727361179643663
+      ui-icons-buttons-set-red_6: -296215139799197453
+      ui-icons-buttons-set-red_7: 391244165902128626
+      ui-icons-buttons-set-red_8: 2526834628218745917
+      ui-icons-buttons-set-red_9: -7119591192684639908
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

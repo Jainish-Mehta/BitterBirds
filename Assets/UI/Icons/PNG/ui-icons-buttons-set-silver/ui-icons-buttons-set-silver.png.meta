@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: b4622fed8a6f5254880f2bbdf79a7923
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3493926808989636631
+    second: ui-icons-buttons-set-silver_0
+  - first:
+      213: 6837592491079927609
+    second: ui-icons-buttons-set-silver_1
+  - first:
+      213: 1108675387695858271
+    second: ui-icons-buttons-set-silver_2
+  - first:
+      213: -8937870539928846733
+    second: ui-icons-buttons-set-silver_3
+  - first:
+      213: -6419433498946973902
+    second: ui-icons-buttons-set-silver_4
+  - first:
+      213: 6616316435514509399
+    second: ui-icons-buttons-set-silver_5
+  - first:
+      213: 4550655998083956818
+    second: ui-icons-buttons-set-silver_6
+  - first:
+      213: -6517490208311904003
+    second: ui-icons-buttons-set-silver_7
+  - first:
+      213: 3087158068653914821
+    second: ui-icons-buttons-set-silver_8
+  - first:
+      213: 7992505811266404616
+    second: ui-icons-buttons-set-silver_9
+  - first:
+      213: -2049634540192266997
+    second: ui-icons-buttons-set-silver_10
+  - first:
+      213: -7486053793054125044
+    second: ui-icons-buttons-set-silver_11
+  - first:
+      213: 3582823920340434040
+    second: ui-icons-buttons-set-silver_12
+  - first:
+      213: 3055358034986587068
+    second: ui-icons-buttons-set-silver_13
+  - first:
+      213: 5749343886626444068
+    second: ui-icons-buttons-set-silver_14
+  - first:
+      213: -6331095970768205111
+    second: ui-icons-buttons-set-silver_15
+  - first:
+      213: 1788407526069594020
+    second: ui-icons-buttons-set-silver_16
+  - first:
+      213: -8245570055130722951
+    second: ui-icons-buttons-set-silver_17
+  - first:
+      213: 7774143919577465632
+    second: ui-icons-buttons-set-silver_18
+  - first:
+      213: -1770960138129286055
+    second: ui-icons-buttons-set-silver_19
+  - first:
+      213: 1847881691500505633
+    second: ui-icons-buttons-set-silver_20
+  - first:
+      213: 8697752037058216007
+    second: ui-icons-buttons-set-silver_21
+  - first:
+      213: 6381022180361327118
+    second: ui-icons-buttons-set-silver_22
+  - first:
+      213: 3225006134073898035
+    second: ui-icons-buttons-set-silver_23
+  - first:
+      213: -671245414561093645
+    second: ui-icons-buttons-set-silver_24
+  - first:
+      213: -9184067776795856701
+    second: ui-icons-buttons-set-silver_25
+  - first:
+      213: -8579886882784571395
+    second: ui-icons-buttons-set-silver_26
+  - first:
+      213: 7594560036941515074
+    second: ui-icons-buttons-set-silver_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7189a01dbebec7030800000000000000
+      internalID: 3493926808989636631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93782bdb42204ee50800000000000000
+      internalID: 6837592491079927609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5284de146ec26f00800000000000000
+      internalID: 1108675387695858271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 413
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ebc1b491e46f380800000000000000
+      internalID: -8937870539928846733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_4
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 413
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fc50c8e3799e6a0800000000000000
+      internalID: -6419433498946973902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_5
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 413
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758cb6c4eb0e1db50800000000000000
+      internalID: 6616316435514509399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_6
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 413
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2508bc4158d272f30800000000000000
+      internalID: 4550655998083956818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_7
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df87b7acf293d85a0800000000000000
+      internalID: -6517490208311904003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caf89f28e9c7da20800000000000000
+      internalID: 3087158068653914821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80187c170b51bee60800000000000000
+      internalID: 7992505811266404616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_10
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 283
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b050870ce3c3e83e0800000000000000
+      internalID: -2049634540192266997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_11
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 283
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c041b8fecb13c1890800000000000000
+      internalID: -7486053793054125044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_12
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 283
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87cf9a87f5fb8b130800000000000000
+      internalID: 3582823920340434040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_13
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 283
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3d201e1ffc66a20800000000000000
+      internalID: 3055358034986587068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423dee5bdc5c9cf40800000000000000
+      internalID: 5749343886626444068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_15
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca447712cd6328a0800000000000000
+      internalID: -6331095970768205111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a763096b23b1d810800000000000000
+      internalID: 1788407526069594020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_17
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 153
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dc555c8b9d19d80800000000000000
+      internalID: -8245570055130722951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_18
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 153
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0238d27a4be43eb60800000000000000
+      internalID: 7774143919577465632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_19
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 153
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c5d6723294c67e0800000000000000
+      internalID: -1770960138129286055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_20
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 153
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ae5d0ab9ef4a910800000000000000
+      internalID: 1847881691500505633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_21
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7400941256f94b870800000000000000
+      internalID: 8697752037058216007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02535c6dd1fd8850800000000000000
+      internalID: 6381022180361327118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_23
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3343eebfdf581cc20800000000000000
+      internalID: 3225006134073898035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_24
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 23
+        width: 122
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7e9f31ad14fa6f0800000000000000
+      internalID: -671245414561093645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_25
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 23
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0b8fa2403ab8080800000000000000
+      internalID: -9184067776795856701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_26
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 23
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff879a965e1ee880800000000000000
+      internalID: -8579886882784571395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui-icons-buttons-set-silver_27
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 23
+        width: 123
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249c64bad1c456960800000000000000
+      internalID: 7594560036941515074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ui-icons-buttons-set-silver_0: 3493926808989636631
+      ui-icons-buttons-set-silver_1: 6837592491079927609
+      ui-icons-buttons-set-silver_10: -2049634540192266997
+      ui-icons-buttons-set-silver_11: -7486053793054125044
+      ui-icons-buttons-set-silver_12: 3582823920340434040
+      ui-icons-buttons-set-silver_13: 3055358034986587068
+      ui-icons-buttons-set-silver_14: 5749343886626444068
+      ui-icons-buttons-set-silver_15: -6331095970768205111
+      ui-icons-buttons-set-silver_16: 1788407526069594020
+      ui-icons-buttons-set-silver_17: -8245570055130722951
+      ui-icons-buttons-set-silver_18: 7774143919577465632
+      ui-icons-buttons-set-silver_19: -1770960138129286055
+      ui-icons-buttons-set-silver_2: 1108675387695858271
+      ui-icons-buttons-set-silver_20: 1847881691500505633
+      ui-icons-buttons-set-silver_21: 8697752037058216007
+      ui-icons-buttons-set-silver_22: 6381022180361327118
+      ui-icons-buttons-set-silver_23: 3225006134073898035
+      ui-icons-buttons-set-silver_24: -671245414561093645
+      ui-icons-buttons-set-silver_25: -9184067776795856701
+      ui-icons-buttons-set-silver_26: -8579886882784571395
+      ui-icons-buttons-set-silver_27: 7594560036941515074
+      ui-icons-buttons-set-silver_3: -8937870539928846733
+      ui-icons-buttons-set-silver_4: -6419433498946973902
+      ui-icons-buttons-set-silver_5: 6616316435514509399
+      ui-icons-buttons-set-silver_6: 4550655998083956818
+      ui-icons-buttons-set-silver_7: -6517490208311904003
+      ui-icons-buttons-set-silver_8: 3087158068653914821
+      ui-icons-buttons-set-silver_9: 7992505811266404616
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

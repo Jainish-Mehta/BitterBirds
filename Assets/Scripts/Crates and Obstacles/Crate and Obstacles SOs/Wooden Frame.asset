@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Wooden Frame
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Wooden Frame
+  blockDescription: This Frame is made from Wood.
+  maxHealth: 40
+  fullHealthSprite: {fileID: -2973847062501219898, guid: 6b9c911d1242cfd44973a39edcd61a2e, type: 3}
+  damagedSprite: {fileID: -176138563628568518, guid: 80b96051873301440830354f096b3459, type: 3}

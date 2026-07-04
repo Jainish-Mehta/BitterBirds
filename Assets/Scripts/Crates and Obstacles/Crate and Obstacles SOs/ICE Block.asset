@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: ICE Block
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: ICE Block
+  blockDescription: This is an ICE Block.
+  maxHealth: 35
+  fullHealthSprite: {fileID: 3310464594589083576, guid: cb011dc8c6428114a9821ffeb1af5095, type: 3}
+  damagedSprite: {fileID: -4485775448751826257, guid: 8e7e3a6ee20b3844b97805624b0cee29, type: 3}

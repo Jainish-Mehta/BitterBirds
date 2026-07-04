@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Wooden Plank Crate
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Wooden Plank Crate
+  blockDescription: This Crate is made from Wooden Planks.
+  maxHealth: 50
+  fullHealthSprite: {fileID: 5069917035870409096, guid: 429d818f325c9ec4a884941b7778ab45, type: 3}
+  damagedSprite: {fileID: -2804217729910731021, guid: f14757eda26d53a4c91692bb329c3418, type: 3}
