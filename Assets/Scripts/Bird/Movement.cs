@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Unity.Cinemachine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
@@ -14,6 +15,10 @@ public class Movement : MonoBehaviour
     [Header("Reset Settings")]
     [SerializeField] private float maxFlightDuration = 9f;
     [SerializeField] private float resetDelayAfterCollision = 3f;
+
+    [Header("Camera Settings")]
+    [SerializeField] private Vector2 slingshotScreenPos = new Vector2(-0.33f, 0.3f);
+    [SerializeField] private Vector2 flyingScreenPos = new Vector2(0f, 0.2f);
 
     private float currentFlightTime = 0f;
     private bool isDragging = false;
@@ -38,6 +43,9 @@ public class Movement : MonoBehaviour
     private PhysicsMaterial2D normalMaterial;
 
     private Vector3 dragTargetPosition;
+
+    private CinemachineCamera cineCam;
+    private CinemachinePositionComposer camComposer;
 
     private void Awake()
     {
@@ -77,6 +85,13 @@ public class Movement : MonoBehaviour
         GameObject woodObj = GameObject.Find("SlingShot Anchor");
         if (woodObj != null) woodCollider = woodObj.GetComponent<Collider2D>();
 
+        GameObject camObj = GameObject.Find("CinemachineCamera");
+        if (camObj != null)
+        {
+            cineCam = camObj.GetComponent<CinemachineCamera>();
+            if (cineCam != null) camComposer = cineCam.GetComponent<CinemachinePositionComposer>();
+        }
+
         if (leftLine != null) leftLine.enabled = false;
         if (rightLine != null) rightLine.enabled = false;
         if (woodCollider != null) woodCollider.enabled = false;
@@ -111,6 +126,36 @@ public class Movement : MonoBehaviour
         }
     }
 
+    // --- FIX #2: LATE UPDATE KEEPS CAMERA PERFECTLY IN SYNC WITH PHYSICS ---
+    private void LateUpdate()
+    {
+        HandleCamera();
+    }
+
+    private void HandleCamera()
+    {
+        if (cineCam == null || camComposer == null || slingShotCenter == null) return;
+
+        if (isFlying || hasHitObstacle)
+        {
+            cineCam.Follow = this.transform;
+            camComposer.Composition.ScreenPosition = Vector2.Lerp(
+                camComposer.Composition.ScreenPosition,
+                flyingScreenPos,
+                Time.deltaTime * 4f
+            );
+        }
+        else
+        {
+            cineCam.Follow = slingShotCenter;
+            camComposer.Composition.ScreenPosition = Vector2.Lerp(
+                camComposer.Composition.ScreenPosition,
+                slingshotScreenPos,
+                Time.deltaTime * 4f
+            );
+        }
+    }
+
     private void HandleMouseAndVisuals()
     {
         if (Mouse.current == null || Camera.main == null) return;
@@ -120,9 +165,6 @@ public class Movement : MonoBehaviour
         Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, zDepth));
         mouseWorldPosition.z = 0f;
 
-        // ==========================================
-        // MOUSE DOWN
-        // ==========================================
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             float distanceToBird = Vector2.Distance(mouseWorldPosition, transform.position);
@@ -146,9 +188,6 @@ public class Movement : MonoBehaviour
             }
         }
 
-        // ==========================================
-        // MOUSE UP
-        // ==========================================
         if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
             if (isDragging)
@@ -175,9 +214,6 @@ public class Movement : MonoBehaviour
             }
         }
 
-        // ==========================================
-        // DRAGGING
-        // ==========================================
         if (isDragging)
         {
             Vector3 pullDirection = (mouseWorldPosition - slingShotCenter.position);
@@ -196,13 +232,10 @@ public class Movement : MonoBehaviour
 
             DrawRubberBands();
 
-            // --- THE TRAJECTORY FIX ---
             if (trajectoryScript != null)
             {
                 Vector2 shootDirection = (Vector2)slingShotCenter.position - (Vector2)transform.position;
                 Vector2 shootForce = shootDirection * power;
-
-                // Offset the start position of the dots to the very front of the bird's face!
                 Vector2 facePosition = (Vector2)transform.position + (shootDirection.normalized * birdRadius);
 
                 trajectoryScript.ShowTrajectory(facePosition, shootForce, rb.mass, defaultGravity, GetStretchRatio());

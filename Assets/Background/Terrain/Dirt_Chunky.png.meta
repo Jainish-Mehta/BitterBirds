@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b66a1625e0964de4fb819bd3d7c943f2
+guid: c2ef5038c4c234648b8e824fb74280c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1193162006482138349
-    second: Dirt_Chunky_0
+      213: 91788732240466381
+    second: Dirt_Chunky (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,199 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dirt_Chunky_0
+      name: Dirt_Chunky (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 136
+        y: 0
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de43cd3f586fe8010800000000000000
-      internalID: 1193162006482138349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 136
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 496bc92e5f97de047be62662cb22f2c6
-      internalID: -1865770050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 136
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af635f07eff14e14897f9e10a15af6fe
-      internalID: 351428718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f4f0449eddebff4186a0a14953ef59c
-      internalID: -1421738638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 72
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9a46792ecb7d2649bd1fdc6286c6710
-      internalID: 696650312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 72
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb196dad6f2a1e1419da81b3775cd406
-      internalID: -334438233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 8
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e4da272de84be04abefa480082b37cb
-      internalID: 1572546708
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 8
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4b629c8af7c075419929ce23107031c
-      internalID: 329832631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Chunky_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 8
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5ed8b26c3c16b4419f437a205300461
-      internalID: 1859276875
+      spriteID: dc1939b9d59164100800000000000000
+      internalID: 91788732240466381
       vertices: []
       indices: 
       edges: []
@@ -327,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 82b8428ebcf2c8f44a6b74a1ba1e046f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -335,19 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Dirt_Chunky_0: 1193162006482138349
-      Dirt_Chunky_1: -1865770050
-      Dirt_Chunky_2: 351428718
-      Dirt_Chunky_3: -1421738638
-      Dirt_Chunky_4: 696650312
-      Dirt_Chunky_5: -334438233
-      Dirt_Chunky_6: 1572546708
-      Dirt_Chunky_7: 329832631
-      Dirt_Chunky_8: 1859276875
+      Dirt_Chunky (1)_0: 91788732240466381
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

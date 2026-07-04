@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6cae24282e9952e40a2c02c53a76bcf8
+guid: 013c122760e69c044a3aba25ec236ac3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2746897129711231903
-    second: Dirt_Pebbles_0
+      213: 7311811162210225298
+    second: Dirt_Pebbles (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,199 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dirt_Pebbles_0
+      name: Dirt_Pebbles (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 136
+        y: 0
         width: 64
         height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f936af2c260fe1620800000000000000
-      internalID: 2746897129711231903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 136
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 592ae2e29ffc1a14f80cb79ef0533b93
-      internalID: -1692618220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 136
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d040d231a32f1b4c9fdd2b0e8afeca3
-      internalID: -768339256
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 72
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2f07f345d4e1174681d23d83072bb91
-      internalID: -1446416089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 72
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fde7cb3e05c44a489b9c4c2d969cdda
-      internalID: -1663906594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 72
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 458ad99d2aad6704880e89c5d8efaeb3
-      internalID: -1629699997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 8
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce6dfab1efdfdab4ab4169da285f9595
-      internalID: -392414046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 8
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04647c45ac799de4495672838561b797
-      internalID: -183876666
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dirt_Pebbles_8
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 8
-        width: 64
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7296db22aadc3e743aa38c74f48e15a6
-      internalID: -810483479
+      spriteID: 29cc64c2385c87560800000000000000
+      internalID: 7311811162210225298
       vertices: []
       indices: 
       edges: []
@@ -327,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 375c3ae5452b3114e91cc61a551810e9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -335,19 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":1.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":2,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Dirt_Pebbles_0: 2746897129711231903
-      Dirt_Pebbles_1: -1692618220
-      Dirt_Pebbles_2: -768339256
-      Dirt_Pebbles_3: -1446416089
-      Dirt_Pebbles_4: -1663906594
-      Dirt_Pebbles_5: -1629699997
-      Dirt_Pebbles_6: -392414046
-      Dirt_Pebbles_7: -183876666
-      Dirt_Pebbles_8: -810483479
+      Dirt_Pebbles (1)_0: 7311811162210225298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
