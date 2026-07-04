@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Wooden Plank
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Wooden Plank
+  blockDescription: This Plank is made from Wood.
+  explosion: {fileID: 0}
+  maxHealth: 70
+  fullHealthSprite: {fileID: 191781560887887008, guid: 779fb83411671e148971eafd842e26b3, type: 3}
+  damagedSprite: {fileID: 7921899696804613464, guid: 018c3487176277140863388a420eb10c, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

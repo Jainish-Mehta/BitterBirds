@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Stone Pillar
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Stone Pillar
+  blockDescription: A Stone Pillar is Heavy and Durable
+  explosion: {fileID: 0}
+  maxHealth: 90
+  fullHealthSprite: {fileID: -3661987663025019638, guid: 48b08f4994cc7824fa494c315d660f1a, type: 3}
+  damagedSprite: {fileID: -1988849724113145884, guid: 73ec89a830e0d11478199feab62260f1, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Wooden Triangle
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Wooden Triangle
+  blockDescription: This Triangle is made from Wood.
+  explosion: {fileID: 0}
+  maxHealth: 70
+  fullHealthSprite: {fileID: 5373000059319790148, guid: 5952117d889504e47a2728a8dd4533ad, type: 3}
+  damagedSprite: {fileID: -2495553369569167308, guid: 37fec85eaa4e58640a79845545e78c50, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

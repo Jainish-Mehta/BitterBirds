@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Stone Plank
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Stone Plank
+  blockDescription: A Stone Plank is Heavy and Durable
+  explosion: {fileID: 0}
+  maxHealth: 90
+  fullHealthSprite: {fileID: 9088516419882674624, guid: 6fde843999541bd4c856108a942c59ef, type: 3}
+  damagedSprite: {fileID: 3689128992352320899, guid: fd9f82eede5423b4eae98d00d4f56683, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

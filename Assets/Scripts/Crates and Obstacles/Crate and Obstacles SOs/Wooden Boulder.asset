@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Wooden Boulder
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Wooden Boulder
+  blockDescription: This Boulder is made from Wood.
+  explosion: {fileID: 0}
+  maxHealth: 70
+  fullHealthSprite: {fileID: -4749525494728398996, guid: 98cd43ef212cbbe46a1d4db9d4f8b9ee, type: 3}
+  damagedSprite: {fileID: 2139684627825436775, guid: 9acdacc418aeec841a5cde0f88868f28, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

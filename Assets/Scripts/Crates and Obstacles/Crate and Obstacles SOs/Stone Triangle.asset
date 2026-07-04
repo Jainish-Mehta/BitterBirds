@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Stone Triangle
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Stone Triangle
+  blockDescription: A Stone Triangle is Heavy and Durable
+  explosion: {fileID: 0}
+  maxHealth: 90
+  fullHealthSprite: {fileID: -7872748412297189117, guid: 87a3e4ee8770fd24fb4e3f6081e334f1, type: 3}
+  damagedSprite: {fileID: 2262915877202731042, guid: 4e72b256683d4ed449c28e4f8493497e, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

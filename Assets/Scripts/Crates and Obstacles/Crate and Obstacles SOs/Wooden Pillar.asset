@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Wooden Pillar
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Wooden Pillar
+  blockDescription: This Pillar is made from Wood.
+  explosion: {fileID: 0}
+  maxHealth: 70
+  fullHealthSprite: {fileID: -8741155745393445006, guid: 736b9a1f318958f45b35b028694f89c2, type: 3}
+  damagedSprite: {fileID: -637889917200485082, guid: f7b5f515d31277e47a6f58411f263069, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

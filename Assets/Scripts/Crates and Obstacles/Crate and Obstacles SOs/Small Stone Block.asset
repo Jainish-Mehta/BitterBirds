@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e04c7469d6ceb44199ac09fdcac0aca, type: 3}
+  m_Name: Small Stone Block
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  blockName: Small Stone Block
+  blockDescription: A Small Stone Block is Heavy and Durable
+  explosion: {fileID: 0}
+  maxHealth: 90
+  fullHealthSprite: {fileID: 8342797297040387055, guid: 382328730a68e7344b5772b73e760e9a, type: 3}
+  damagedSprite: {fileID: 1414997126660421661, guid: dbb9501b9323a4443b4425b7ab711ad9, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100
