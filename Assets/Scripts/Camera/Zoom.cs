@@ -14,7 +14,7 @@ public class Zoom : MonoBehaviour
     [SerializeField] private float maxSpeedForZoom = 15f;
 
     [Header("Debug Tools")]
-    [SerializeField] private bool showZoomDebugLogs = true;
+    //[SerializeField] private bool showZoomDebugLogs = true;
 
     private CinemachineCamera cineCam;
     private Rigidbody2D rb;

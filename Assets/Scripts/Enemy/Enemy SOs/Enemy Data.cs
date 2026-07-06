@@ -13,5 +13,10 @@ public class EnemyData : ScriptableObject
     public int pointValue = 500;
 
     [Header("Visuals")]
-    public Sprite defaultSprite; // Just one sprite!
+    public Sprite defaultSprite; 
+
+    [Header("Audio")]
+    public AudioClip gruntSound; 
+    public AudioClip popSound;
+    public AudioClip damagedSound;
 }

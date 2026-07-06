@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   blockName: Wooden Plank Crate
   blockDescription: This Crate is made from Wooden Planks.
+  explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 4e8a97727b8ba404fbba71dedffdb25c, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 50
+  pointValue: 90
   fullHealthSprite: {fileID: 5069917035870409096, guid: 429d818f325c9ec4a884941b7778ab45, type: 3}
   damagedSprite: {fileID: -2804217729910731021, guid: f14757eda26d53a4c91692bb329c3418, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

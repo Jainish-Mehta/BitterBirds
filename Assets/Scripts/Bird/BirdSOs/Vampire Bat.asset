@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eabb16568e6a845a3a9e5d8d92ff14, type: 3}
+  m_Name: Vampire Bat
+  m_EditorClassIdentifier: Assembly-CSharp::BirdData
+  birdName: Vampire Bat
+  description: The Vampire Bat can use Ultra Sonic Sound Wave against enemies.
+  birdSprite: {fileID: -1837837335837751186, guid: e9f8eb5b27029ed4c83e644beec384dc, type: 3}
+  animatorController: {fileID: 9100000, guid: 20dbb37e21a9b8248828a1de0e09eebc, type: 2}

@@ -15,7 +15,10 @@ MonoBehaviour:
   blockName: Wooden Plank
   blockDescription: This Plank is made from Wood.
   explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 4e8a97727b8ba404fbba71dedffdb25c, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 70
+  pointValue: 90
   fullHealthSprite: {fileID: 191781560887887008, guid: 779fb83411671e148971eafd842e26b3, type: 3}
   damagedSprite: {fileID: 7921899696804613464, guid: 018c3487176277140863388a420eb10c, type: 3}
   isTNT: 0

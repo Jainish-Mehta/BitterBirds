@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 83f201b969dc37949b7f981c7c9ad6f2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - defaultSprite: {instanceID: 0}
+  - gruntSound: {instanceID: 0}
+  - popSound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

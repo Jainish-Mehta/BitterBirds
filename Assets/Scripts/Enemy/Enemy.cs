@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
 
 
     [SerializeField] private GameObject poof;
+    private bool isDead = false;
 
     private float currentHealth;
 
@@ -31,16 +32,29 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (GameManager.Instance != null && GameManager.Instance.isWinScreenVisible) return;
+
         float impactSpeed = collision.relativeVelocity.magnitude;
 
+        if (impactSpeed > 1.0f)
+        {
+            if (AudioManager.Instance != null && enemyData != null && enemyData.gruntSound != null)
+            {
+                // Play specific pig grunt from EnemyData at 40% volume
+                AudioManager.Instance.PlaySound(enemyData.damagedSound, 0.4f);
+            }
+        }
+
+        // 2. DEAL DAMAGE
         if (impactSpeed > 1.5f)
         {
             float incomingMass = 1f;
-            if(collision.rigidbody != null)
+            if (collision.rigidbody != null)
             {
                 incomingMass = collision.rigidbody.mass;
             }
-            float damageAmount = impactSpeed * fragility * fragility;
+
+            float damageAmount = impactSpeed * incomingMass * fragility;
             TakeDamage(damageAmount);
         }
     }
@@ -57,10 +71,24 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        // TODO: Add points to score manager
+        if (isDead) return;
+        isDead = true;
 
         Instantiate(poof, transform.position, Quaternion.identity);
 
-        gameObject.SetActive(false);
+        if (AudioManager.Instance != null && enemyData != null && enemyData.popSound != null)
+        {
+            AudioManager.Instance.PlaySound(enemyData.popSound, 0.4f);
+        }
+
+        if (GameManager.Instance != null && enemyData != null)
+        {
+            GameManager.Instance.AddScore(enemyData.pointValue);
+
+            // --- NEW: Pass this specific GameObject's name to the GameManager ---
+            GameManager.Instance.PigDestroyed(gameObject.name);
+        }
+
+        Destroy(gameObject);
     }
 }

@@ -17,3 +17,6 @@ MonoBehaviour:
   maxHealth: 40
   pointValue: 500
   defaultSprite: {fileID: -4137743872691470368, guid: 1ba181505d93a614e808189c69f2d1c0, type: 3}
+  gruntSound: {fileID: 8300000, guid: d18c9d502b8c60e4aabc9616d5cd62a5, type: 3}
+  popSound: {fileID: 8300000, guid: 66670833ce540e443aff95aebb792958, type: 3}
+  damagedSound: {fileID: 8300000, guid: d17493e178728054e877720d1c9c5768, type: 3}

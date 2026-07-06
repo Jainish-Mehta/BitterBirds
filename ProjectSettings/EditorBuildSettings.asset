@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BitterBird.unity
+    path: Assets/Scenes/BitterBirds.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: ccfa3e64d2606d6438e71f1272e02b4c
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: baebc9802c9be7c4796a9ac10363ab28
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: dac0f8990f1169b4b8eabf557187da40
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 611ceb451e7aaaa43b46cd789106b79a
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 68c37c661f3320f47b64372533957e73
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

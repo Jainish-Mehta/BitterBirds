@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   blockName: Wooden Crate
   blockDescription: This Crate is made from Wood.
+  explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 4e8a97727b8ba404fbba71dedffdb25c, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 70
+  pointValue: 90
   fullHealthSprite: {fileID: -3278437574480940572, guid: a188fb26af21f474db6e62b244e8a57b, type: 3}
   damagedSprite: {fileID: -6647438729224115344, guid: 1b0fd8805d1340a4083cbe80d6b4faf4, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

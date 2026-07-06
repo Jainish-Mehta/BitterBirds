@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   blockName: Wooden Frame
   blockDescription: This Frame is made from Wood.
+  explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 4e8a97727b8ba404fbba71dedffdb25c, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 40
+  pointValue: 90
   fullHealthSprite: {fileID: -2973847062501219898, guid: 6b9c911d1242cfd44973a39edcd61a2e, type: 3}
   damagedSprite: {fileID: -176138563628568518, guid: 80b96051873301440830354f096b3459, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100

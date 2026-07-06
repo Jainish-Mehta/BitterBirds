@@ -15,6 +15,8 @@ MonoBehaviour:
   blockName: Stone Triangle
   blockDescription: A Stone Triangle is Heavy and Durable
   explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 5dd86a015f371b74f909be28ee73b0e8, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 90
   fullHealthSprite: {fileID: -7872748412297189117, guid: 87a3e4ee8770fd24fb4e3f6081e334f1, type: 3}
   damagedSprite: {fileID: 2262915877202731042, guid: 4e72b256683d4ed449c28e4f8493497e, type: 3}

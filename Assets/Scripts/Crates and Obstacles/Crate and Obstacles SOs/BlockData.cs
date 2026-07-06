@@ -9,9 +9,11 @@ public class BlockData : ScriptableObject
 
     [Header("Effects")]
     public GameObject explosion; // Drag your explosion prefab here!
+    public AudioClip breakSound;
+    public AudioClip impactSound;
 
-    [Header("Block Stats")]
     public float maxHealth = 50f;
+    public int pointValue = 100; 
 
     [Header("Visuals")]
     public Sprite fullHealthSprite; 

@@ -15,7 +15,10 @@ MonoBehaviour:
   blockName: ICE Plank
   blockDescription: This is an ICE Plank.
   explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 4e8a97727b8ba404fbba71dedffdb25c, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 35
+  pointValue: 80
   fullHealthSprite: {fileID: 1422457899025438271, guid: 307b60841aedb2e41b46cdf04c14ed92, type: 3}
   damagedSprite: {fileID: -245933415115128815, guid: ae81cff07f774b34cb50b2cae1c10c2d, type: 3}
   isTNT: 0

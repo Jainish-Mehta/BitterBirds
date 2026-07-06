@@ -6,6 +6,9 @@ using Unity.Cinemachine;
 [RequireComponent(typeof(Collider2D))]
 public class Movement : MonoBehaviour
 {
+    [Header("Bird Data")]
+    public BirdData birdData;
+
     [Header("Gameplay Settings")]
     [SerializeField] private float maxDragDistance = 2f;
     [SerializeField] private float power = 5f;
@@ -37,6 +40,7 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator anim;
     private DottedTrajectory trajectoryScript;
 
     private PhysicsMaterial2D slipperyMaterial;
@@ -51,6 +55,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
         birdCollider = GetComponent<Collider2D>();
         trajectoryScript = GetComponent<DottedTrajectory>();
 
@@ -97,12 +102,35 @@ public class Movement : MonoBehaviour
         if (woodCollider != null) woodCollider.enabled = false;
     }
 
+    // --- THE INJECTION METHOD ---
+    public void InitializeBird(BirdData data)
+    {
+        birdData = data;
+
+        if (birdData != null)
+        {
+            gameObject.name = birdData.birdName;
+
+            if (birdData.birdSprite != null) sr.sprite = birdData.birdSprite;
+
+            if (anim != null && birdData.animatorController != null)
+            {
+                anim.runtimeAnimatorController = birdData.animatorController;
+            }
+        }
+    }
+
     private void Update()
     {
         HandleMouseAndVisuals();
 
         if (isFlying)
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.UpdateFlightWind(rb.linearVelocity.magnitude);
+            }
+
             if (!hasHitObstacle && rb.linearVelocity.sqrMagnitude > 0.1f)
             {
                 float angle = Mathf.Atan2(rb.linearVelocity.y, rb.linearVelocity.x) * Mathf.Rad2Deg;
@@ -126,7 +154,6 @@ public class Movement : MonoBehaviour
         }
     }
 
-    // --- FIX #2: LATE UPDATE KEEPS CAMERA PERFECTLY IN SYNC WITH PHYSICS ---
     private void LateUpdate()
     {
         HandleCamera();
@@ -158,19 +185,23 @@ public class Movement : MonoBehaviour
 
     private void HandleMouseAndVisuals()
     {
-        if (Mouse.current == null || Camera.main == null) return;
+        if (Pointer.current == null || Camera.main == null) return;
 
-        Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
+        Vector2 pointerScreenPosition = Pointer.current.position.ReadValue();
         float zDepth = Mathf.Abs(Camera.main.transform.position.z);
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, zDepth));
-        mouseWorldPosition.z = 0f;
+        Vector3 pointerWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(pointerScreenPosition.x, pointerScreenPosition.y, zDepth));
+        pointerWorldPosition.z = 0f;
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Pointer.current.press.wasPressedThisFrame)
         {
-            float distanceToBird = Vector2.Distance(mouseWorldPosition, transform.position);
+            if (GameManager.Instance != null && GameManager.Instance.isGameOver) return;
+
+            float distanceToBird = Vector2.Distance(pointerWorldPosition, transform.position);
 
             if (distanceToBird <= grabRadius)
             {
+                if (AudioManager.Instance != null) AudioManager.Instance.PlayStretch();
+
                 isDragging = true;
                 hasHitObstacle = false;
 
@@ -188,7 +219,7 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        if (Pointer.current.press.wasReleasedThisFrame)
         {
             if (isDragging)
             {
@@ -210,13 +241,21 @@ public class Movement : MonoBehaviour
                 isFlying = true;
                 currentFlightTime = 0f;
 
+                if (GameManager.Instance != null) GameManager.Instance.hasBirdLaunched = true;
                 if (trajectoryScript != null) trajectoryScript.HideTrajectory();
+
+                if (AudioManager.Instance != null)
+                {
+                    AudioManager.Instance.StopStretch();
+                    AudioManager.Instance.PlayBirdSound(AudioManager.Instance.snap);
+                    AudioManager.Instance.PlayBirdSound(AudioManager.Instance.birdYell);
+                }
             }
         }
 
         if (isDragging)
         {
-            Vector3 pullDirection = (mouseWorldPosition - slingShotCenter.position);
+            Vector3 pullDirection = (pointerWorldPosition - slingShotCenter.position);
 
             if (pullDirection.magnitude > maxDragDistance)
             {
@@ -245,14 +284,14 @@ public class Movement : MonoBehaviour
 
     public float GetStretchRatio()
     {
-        if (!isDragging || slingShotCenter == null || Mouse.current == null || Camera.main == null) return 0f;
+        if (!isDragging || slingShotCenter == null || Pointer.current == null || Camera.main == null) return 0f;
 
-        Vector2 mouseScreenPosition = Mouse.current.position.ReadValue();
+        Vector2 pointerScreenPosition = Pointer.current.position.ReadValue();
         float zDepth = Mathf.Abs(Camera.main.transform.position.z);
-        Vector3 mouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mouseScreenPosition.x, mouseScreenPosition.y, zDepth));
-        mouseWorldPosition.z = 0f;
+        Vector3 pointerWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(pointerScreenPosition.x, pointerScreenPosition.y, zDepth));
+        pointerWorldPosition.z = 0f;
 
-        Vector3 pullDirection = mouseWorldPosition - slingShotCenter.position;
+        Vector3 pullDirection = pointerWorldPosition - slingShotCenter.position;
         return Mathf.Clamp01(pullDirection.magnitude / maxDragDistance);
     }
 
@@ -277,27 +316,26 @@ public class Movement : MonoBehaviour
     {
         CancelInvoke(nameof(resetBird));
 
-        rb.linearVelocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        transform.rotation = Quaternion.identity;
-        sr.flipY = false;
-
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        rb.gravityScale = defaultGravity;
-        birdCollider.sharedMaterial = normalMaterial;
-
-        if (woodCollider != null) woodCollider.enabled = false;
-
-        if (slingShotCenter != null)
-        {
-            transform.position = slingShotCenter.position;
-        }
-
         isFlying = false;
         hasHitObstacle = false;
-        currentFlightTime = 0f;
 
         if (trajectoryScript != null) trajectoryScript.HideTrajectory();
+
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.UpdateFlightWind(0f);
+        }
+
+        BirdManager manager = Object.FindAnyObjectByType<BirdManager>();
+
+        if (manager != null)
+        {
+            manager.BirdFinishedTurn();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -307,6 +345,11 @@ public class Movement : MonoBehaviour
             hasHitObstacle = true;
             Invoke(nameof(resetBird), resetDelayAfterCollision);
             isFlying = false;
+
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.UpdateFlightWind(0f);
+            }
         }
     }
 
@@ -314,6 +357,11 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Boundary Limits"))
         {
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.UpdateFlightWind(0f);
+            }
+
             resetBird();
         }
     }

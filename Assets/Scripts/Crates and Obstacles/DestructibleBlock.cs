@@ -1,4 +1,4 @@
-using UnityEngine;
+    using UnityEngine;
 
 public class DestructibleBlock : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class DestructibleBlock : MonoBehaviour
     private float currentHealth;
     private SpriteRenderer sr;
     private bool isDamaged = false;
+    private bool isDead = false;
 
     private void Start()
     {
@@ -25,7 +26,19 @@ public class DestructibleBlock : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (GameManager.Instance != null && !GameManager.Instance.hasBirdLaunched) return;
+        if (GameManager.Instance != null && GameManager.Instance.isWinScreenVisible) return;
         float impactSpeed = collision.relativeVelocity.magnitude;
+
+        if (impactSpeed > 0.5f)
+        {
+            if (AudioManager.Instance != null && blockData != null && blockData.impactSound != null)
+            {
+                // Calculate volume: speed of 10 gives max volume. Smaller speeds = quieter sounds!
+                float dynamicVolume = Mathf.Clamp01(impactSpeed / 10f);
+                AudioManager.Instance.PlaySound(blockData.impactSound, dynamicVolume);
+            }
+        }
 
         if (impactSpeed > 1.5f)
         {
@@ -60,13 +73,25 @@ public class DestructibleBlock : MonoBehaviour
 
     private void Die()
     {
+        if (isDead) return;
+        isDead = true;
+        if (GameManager.Instance != null && blockData != null)
+        {
+            GameManager.Instance.AddScore(blockData.pointValue);
+        }
+
         if (blockData != null && blockData.explosion != null)
         {
-            // Create the explosion at this exact position
             GameObject effect = Instantiate(blockData.explosion, transform.position, Quaternion.identity);
-
             Destroy(effect, 2f);
         }
+
+        // --- THE FIX: Add "0.4f" to play the break/explosion sound at 40% volume ---
+        if (AudioManager.Instance != null && blockData != null && blockData.breakSound != null)
+        {
+            AudioManager.Instance.PlaySound(blockData.breakSound, 0.35f);
+        }
+
         if (blockData != null && blockData.isTNT)
         {
             Explode();

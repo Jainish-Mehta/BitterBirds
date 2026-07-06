@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BlockData
   blockName: Stone Boulder
   blockDescription: A Circular shaped Stone similar to Stone Block
+  explosion: {fileID: 0}
+  breakSound: {fileID: 8300000, guid: 5dd86a015f371b74f909be28ee73b0e8, type: 3}
+  impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 80
   fullHealthSprite: {fileID: -1424415680098766684, guid: 3cf671747807eca408be21fced27b1c3, type: 3}
   damagedSprite: {fileID: -3581087034162066086, guid: cc04f74700ed4ea409bb3b0d106cd0d5, type: 3}
+  isTNT: 0
+  explosionRadius: 3
+  explosionForce: 50
+  explosionDamage: 100
