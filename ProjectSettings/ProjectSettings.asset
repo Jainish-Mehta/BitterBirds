@@ -882,10 +882,10 @@ PlayerSettings:
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
   enableDirectStorage: 0
-  cloudProjectId: 254bacb7-cc10-4e97-8154-f867160914d8
+  cloudProjectId: 20588c0a-03ba-450d-9572-984ae8756068
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: BitterBirds
+  projectName: BitterBirds(NewProjectID)
   organizationId: mehtajainish81
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

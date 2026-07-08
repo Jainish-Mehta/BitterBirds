@@ -16,3 +16,8 @@ MonoBehaviour:
   description: The Spinky Bird can be divide into 3 birds.
   birdSprite: {fileID: -1837837335837751186, guid: 2bf69e37a59efb9418f3de27ecaaa0af, type: 3}
   animatorController: {fileID: 22100000, guid: 2d6186720146840429bbdee2ca32e62b, type: 2}
+  ability: 4
+  abilityPower: 20
+  abilityRadius: 3
+  shockwavePrefab: {fileID: 0}
+  tntPrefab: {fileID: 0}

@@ -16,3 +16,8 @@ MonoBehaviour:
   description: The Vampire Bat can use Ultra Sonic Sound Wave against enemies.
   birdSprite: {fileID: -1837837335837751186, guid: e9f8eb5b27029ed4c83e644beec384dc, type: 3}
   animatorController: {fileID: 9100000, guid: 20dbb37e21a9b8248828a1de0e09eebc, type: 2}
+  ability: 1
+  abilityPower: 10
+  abilityRadius: 5
+  shockwavePrefab: {fileID: 4219208102764178496, guid: c128c09eaf225ab4b831ccc2510131dc, type: 3}
+  tntPrefab: {fileID: 0}

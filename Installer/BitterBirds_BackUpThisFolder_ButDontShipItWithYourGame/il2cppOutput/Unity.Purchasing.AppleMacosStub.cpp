@@ -396,7 +396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_mDAB47BC6B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 98194
+// Method Definition Index: 98239
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tDDDCC7D3D70EF1E5718DB0D9713D8498A369313B UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m1C2AB186402E995AFA8D0B93A235886B58870E80 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -431,7 +431,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tDDDCC7D3D70EF1E5718DB0D9713D8
 		return L_6;
 	}
 }
-// Method Definition Index: 98195
+// Method Definition Index: 98240
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m3C27A3567D3251B35547D1E1AC0937B76632D26B (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_t377365003AF2C15E182585733146C95D28DB305C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -518,7 +518,7 @@ IL2CPP_EXTERN_C void MonoScriptData_tDDDCC7D3D70EF1E5718DB0D9713D8498A369313B_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 98196
+// Method Definition Index: 98241
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetUnityPurchasingCallback_m9B4AE831B19A63329EAC52D411D15FBA8BA829A1 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, UnityPurchasingCallback_t3C1333A45134D9A999AB29AEEBF05883A9A707F3* ___0_AsyncCallback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -528,7 +528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetUnityPurchasingCallb
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_SetUnityPurchasingCallback_m9B4AE831B19A63329EAC52D411D15FBA8BA829A1_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98197
+// Method Definition Index: 98242
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Sk1SetUnityPurchasingCallback_m03EF1CDF6C069FF885A70DF29EE72D7A94698EA9 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, Sk1UnityPurchasingCallback_tEC9C8BA3D2964FE0F1357290A497D94F0C2ABF98* ___0_asyncCallback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -538,7 +538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Sk1SetUnityPurchasingCa
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_Sk1SetUnityPurchasingCallback_m03EF1CDF6C069FF885A70DF29EE72D7A94698EA9_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98198
+// Method Definition Index: 98243
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_RestoreTransactions_mD2B10C0455BF99E10AC708717142F12EAB26D560 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -548,7 +548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_RestoreTransactions_mD2
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_RestoreTransactions_mD2B10C0455BF99E10AC708717142F12EAB26D560_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98199
+// Method Definition Index: 98244
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetAppAccountToken_mE30AC1AE5EBB82DD056C6E0D03A3E98F7F8310AF (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_token, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -558,7 +558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetAppAccountToken_mE30
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_SetAppAccountToken_mE30AC1AE5EBB82DD056C6E0D03A3E98F7F8310AF_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98200
+// Method Definition Index: 98245
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_AppReceipt_m877C9F7EB1EBF918D230FFF5759992D649593FE3 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -568,7 +568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_AppReceipt_m877C9F
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_AppReceipt_m877C9F7EB1EBF918D230FFF5759992D649593FE3_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98201
+// Method Definition Index: 98246
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Connect_m2FD92838A1D3D2B2EDB972C434E6053DEC05C75D (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -578,7 +578,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Connect_m2FD92838A1D3D2
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_Connect_m2FD92838A1D3D2B2EDB972C434E6053DEC05C75D_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98202
+// Method Definition Index: 98247
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_AddTransactionObserver_m15EFA84E6FA488EB3BF0D93A3B4787479959E493 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -588,7 +588,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_AddTransactionObserver_
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_AddTransactionObserver_m15EFA84E6FA488EB3BF0D93A3B4787479959E493_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98203
+// Method Definition Index: 98248
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetApplicationUsername_m3EC2BEFEEC4B62D88E299B738A78714F2722F1EB (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_applicationUsername, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -598,7 +598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetApplicationUsername_
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_SetApplicationUsername_m3EC2BEFEEC4B62D88E299B738A78714F2722F1EB_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98204
+// Method Definition Index: 98249
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchProducts_mB211E5948DDBA03D378AEEE89EF1F1B737618A66 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -608,7 +608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchProducts_mB211E594
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchProducts_mB211E5948DDBA03D378AEEE89EF1F1B737618A66_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98205
+// Method Definition Index: 98250
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchExistingPurchases_m347A52EFDB84D8841D2209BB3388C7BF51D7F608 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -618,7 +618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchExistingPurchases_
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchExistingPurchases_m347A52EFDB84D8841D2209BB3388C7BF51D7F608_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98206
+// Method Definition Index: 98251
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Purchase_m158A10177614EFC04C210A20B0A63349FA17CF36 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_productJSON, String_t* ___1_developerPayload, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -628,7 +628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Purchase_m158A10177614E
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_Purchase_m158A10177614EFC04C210A20B0A63349FA17CF36_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98207
+// Method Definition Index: 98252
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FinishTransaction_m4EB9B2AB24B153365A394AD3E231DC863DA81848 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_productJSON, String_t* ___1_transactionID, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -638,7 +638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FinishTransaction_m4EB9
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FinishTransaction_m4EB9B2AB24B153365A394AD3E231DC863DA81848_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98208
+// Method Definition Index: 98253
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OSXStoreBindings_CheckEntitlement_m4F4932796E054035747A419B3030717C2E754F8A (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_productJSON, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -648,7 +648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OSXStoreBindings_CheckEntitlement_m4F493
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_CheckEntitlement_m4F4932796E054035747A419B3030717C2E754F8A_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98209
+// Method Definition Index: 98254
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OSXStoreBindings_get_canMakePayments_m38135A8B05345AEF9F84674C4124D7052637BD01 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -658,7 +658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OSXStoreBindings_get_canMakePayments_m38
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_get_canMakePayments_m38135A8B05345AEF9F84674C4124D7052637BD01_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98210
+// Method Definition Index: 98255
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchStorePromotionOrder_m37094EAED1A9BE0ACB8F941399C9B29D5B5DEB06 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -668,7 +668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchStorePromotionOrde
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchStorePromotionOrder_m37094EAED1A9BE0ACB8F941399C9B29D5B5DEB06_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98211
+// Method Definition Index: 98256
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetStorePromotionOrder_m37B040B47F43881A357F531112ADDB952EAC1369 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -678,7 +678,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetStorePromotionOrder_
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_SetStorePromotionOrder_m37B040B47F43881A357F531112ADDB952EAC1369_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98212
+// Method Definition Index: 98257
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchStorePromotionVisibility_m7A4C60E2D31B6B1BF77A2E72F77454B3C7A77860 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_productId, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -688,7 +688,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchStorePromotionVisi
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchStorePromotionVisibility_m7A4C60E2D31B6B1BF77A2E72F77454B3C7A77860_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98213
+// Method Definition Index: 98258
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetStorePromotionVisibility_m3FE12540C7579E63E5C50CAB268C8B81F18F3BAF (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_productId, String_t* ___1_visibility, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -698,7 +698,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_SetStorePromotionVisibi
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_SetStorePromotionVisibility_m3FE12540C7579E63E5C50CAB268C8B81F18F3BAF_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98214
+// Method Definition Index: 98259
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_InterceptPromotionalPurchases_mBE76F91E24259C18DF6BE974334A5B4E3B02B78E (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -708,7 +708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_InterceptPromotionalPur
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_InterceptPromotionalPurchases_mBE76F91E24259C18DF6BE974334A5B4E3B02B78E_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98215
+// Method Definition Index: 98260
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ContinuePromotionalPurchases_mFE95AB6DEFED5FAFD7E086AD2AF35C0508A5720D (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -718,7 +718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ContinuePromotionalPurc
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_ContinuePromotionalPurchases_mFE95AB6DEFED5FAFD7E086AD2AF35C0508A5720D_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98216
+// Method Definition Index: 98261
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_PresentCodeRedemptionSheet_m48ECA66E4E60A4F7C3320CFC26D3EC74F8FE0B5F (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -728,7 +728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_PresentCodeRedemptionSh
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_PresentCodeRedemptionSheet_m48ECA66E4E60A4F7C3320CFC26D3EC74F8FE0B5F_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98217
+// Method Definition Index: 98262
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_DeallocateMemory_m348292CD797CDF6D94B704BCCE4484AB8F7D4E14 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, intptr_t ___0_pointer, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -738,7 +738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_DeallocateMemory_m34829
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_DeallocateMemory_m348292CD797CDF6D94B704BCCE4484AB8F7D4E14_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98218
+// Method Definition Index: 98263
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_RefreshAppReceipt_mCE20ABD067443DD71E3F0181B9E26BC5DEF5EA1B (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -748,7 +748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_RefreshAppReceipt_mCE20
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_RefreshAppReceipt_mCE20ABD067443DD71E3F0181B9E26BC5DEF5EA1B_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98219
+// Method Definition Index: 98264
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_TransactionObserved_m377FB823CF4ED39382B4495E7E14202896DD3AE8 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_transactionId, String_t* ___1_productId, String_t* ___2_productJsonRepresentation, double ___3_transactionUnixTime, String_t* ___4_transactionJsonRepresentation, String_t* ___5_signatureJws, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -758,7 +758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_TransactionObserved_m37
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_TransactionObserved_m377FB823CF4ED39382B4495E7E14202896DD3AE8_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98220
+// Method Definition Index: 98265
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchPurchases_m7747809178A5E4800F8BB2C9DC685DCFA7413299 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_json, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -768,7 +768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchPurchases_m7747809
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchPurchases_m7747809178A5E4800F8BB2C9DC685DCFA7413299_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98221
+// Method Definition Index: 98266
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Purchase_m21BC2DC114C2E62BBD23AD93483B52594B8C38BA (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_productJson, String_t* ___1_optionsJson, StorefrontChangeCallback_tFF0E50758B09B379FFAD47874880E4CEC6AFB570* ___2_callback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -778,7 +778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_Purchase_m21BC2DC114C2E
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_Purchase_m21BC2DC114C2E62BBD23AD93483B52594B8C38BA_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98222
+// Method Definition Index: 98267
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchStorefront_mC8ED0EF682179E503704DDC1D274856DCED16752 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -788,7 +788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_FetchStorefront_mC8ED0E
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchStorefront_mC8ED0EF682179E503704DDC1D274856DCED16752_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98223
+// Method Definition Index: 98268
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_FetchAdvertisingIdentifier_m38117D821F29C5C516F5E6C800EF66065EC285A5 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -796,7 +796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_FetchAdvertisingId
 		return (String_t*)NULL;
 	}
 }
-// Method Definition Index: 98224
+// Method Definition Index: 98269
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_FetchVendorIdentifier_m5BC15DB05B2F24B95C83B1B20ED2F1F2A16F6722 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -804,7 +804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_FetchVendorIdentif
 		return (String_t*)NULL;
 	}
 }
-// Method Definition Index: 98225
+// Method Definition Index: 98270
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseCheckEligibility_m49446A0426E1DB078C30DEB376D473E8737A0519 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, ExternalPurchaseCallback_tFD91291B1046ACF14B01058D1143857F58FFA112* ___0_callback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -814,7 +814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseCheckEl
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_ExternalPurchaseCheckEligibility_m49446A0426E1DB078C30DEB376D473E8737A0519_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98226
+// Method Definition Index: 98271
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseFetchToken_m9F70173B6274D1895DB3CB6C569E8C1AADDEBDA5 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_tokenType, ExternalPurchaseCallback_tFD91291B1046ACF14B01058D1143857F58FFA112* ___1_callback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -824,7 +824,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseFetchTo
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_ExternalPurchaseFetchToken_m9F70173B6274D1895DB3CB6C569E8C1AADDEBDA5_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98227
+// Method Definition Index: 98272
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseShowNotice_mD1024207D9D56B41796F5B46E1A7AE1001441706 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, String_t* ___0_noticeType, ExternalPurchaseCallback_tFD91291B1046ACF14B01058D1143857F58FFA112* ___1_callback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -834,7 +834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseShowNot
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_ExternalPurchaseShowNotice_mD1024207D9D56B41796F5B46E1A7AE1001441706_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98228
+// Method Definition Index: 98273
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseFetchStorefront_mBCC038768710D0696DBF84EEBC32C88EECC3FCEF (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, ExternalPurchaseCallback_tFD91291B1046ACF14B01058D1143857F58FFA112* ___0_callback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -844,7 +844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings_ExternalPurchaseFetchSt
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_ExternalPurchaseFetchStorefront_mBCC038768710D0696DBF84EEBC32C88EECC3FCEF_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98229
+// Method Definition Index: 98274
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_FetchNativeDeviceInfo_m1A7790545D047FBBD255B11C1CA4AC4A43C43B69 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -854,7 +854,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OSXStoreBindings_FetchNativeDeviceI
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OSXStoreBindings_FetchNativeDeviceInfo_m1A7790545D047FBBD255B11C1CA4AC4A43C43B69_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 98230
+// Method Definition Index: 98275
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OSXStoreBindings__ctor_m858AEA206C8B4F7BCA3D0A062F94CB5ACBF692E3 (OSXStoreBindings_tE511ABF925EFF341C1502B35CEDE28266CD1A645* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>

@@ -16,3 +16,7 @@ MonoBehaviour:
   description: The standard bird. No special abilities.
   birdSprite: {fileID: -1837837335837751186, guid: 94365d74ac4308945aa1808cfc9ba433, type: 3}
   animatorController: {fileID: 22100000, guid: 8cd70443ffd41b84b8fdb3c3f410b8cd, type: 2}
+  ability: 0
+  abilityPower: 20
+  abilityRadius: 3
+  tntPrefab: {fileID: 0}

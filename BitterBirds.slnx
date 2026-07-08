@@ -91,6 +91,7 @@
   <Project Path="UnityEditor.UI.csproj" />
   <Project Path="Unity.Multiplayer.Center.Common.csproj" />
   <Project Path="Unity.UnifiedRayTracing.Runtime.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Unity.Purchasing.LiveContentAdapterService.csproj" />
   <Project Path="Unity.2D.Tilemap.Extras.Editor.csproj" />
   <Project Path="Unity.2D.Sprite.Editor.csproj" />
@@ -130,7 +131,6 @@
   <Project Path="Unity.Purchasing.SecurityStub.csproj" />
   <Project Path="Unity.Services.Core.csproj" />
   <Project Path="Unity.CollabProxy.Editor.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="IAPResolver.csproj" />
   <Project Path="Unity.2D.Common.Runtime.csproj" />
   <Project Path="Unity.Purchasing.AppleStub.csproj" />

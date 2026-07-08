@@ -1,5 +1,6 @@
 using UnityEngine;
-using TMPro; // Add this at the top to access TextMeshPro UI elements!
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,23 +11,38 @@ public class GameManager : MonoBehaviour
     public CanvasGroup loseScreenGroup;
 
     [Header("Score UI")]
-    public TextMeshProUGUI scoreText; // Drag your on-screen Score Text here in the Inspector!
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI highScoreText;
+    public int pointsPerUnusedBird = 10000;
+
+    [Header("Star UI System")]
+    public Image starLeft;
+    public Image starCenter;
+    public Image starRight;
+
+    // --- THE FIX: We use Color instead of empty sprites! ---
+    [Tooltip("What color should the star be when earned? (Usually Pure White)")]
+    public Color earnedStarColor = Color.white;
+
+    [Tooltip("What color should the star be when NOT earned? (Usually dark grey or black)")]
+    public Color unearnedStarColor = new Color(0.3f, 0.3f, 0.3f, 1f);
 
     public bool hasBirdLaunched = false;
     public bool isGameOver = false;
     public bool isWinScreenVisible = false;
 
     private int totalPigs = 0;
-    private int currentScore = 0; // The internal score counter
+    private int currentScore = 0;
+    private int maxLevelScore = 0;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        #if !UNITY_EDITOR
-                    Debug.unityLogger.logEnabled = false;
-        #endif
+#if !UNITY_EDITOR
+            Debug.unityLogger.logEnabled = false;
+#endif
     }
 
     private void Start()
@@ -36,72 +52,118 @@ public class GameManager : MonoBehaviour
         isGameOver = false;
         isWinScreenVisible = false;
 
-        // Ensure the score text starts at 0
         UpdateScoreDisplay();
-
-        // --- NEW: Find by TAG instead of by Script ---
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        totalPigs = enemies.Length;
-
-        // LOG 1: See exactly how many enemies the game detects on load
-        Debug.Log("[GameManager] Level Started. Total Enemies Found by Tag: " + totalPigs);
+        CalculateLevelMaxScore();
+        UpdateStarUI(0);
     }
 
-    // --- NEW: Require the enemy to pass its name so we can log it! ---
+    private void CalculateLevelMaxScore()
+    {
+        maxLevelScore = 0;
+        totalPigs = 0;
+
+        Enemy[] enemies = Object.FindObjectsByType<Enemy>(FindObjectsInactive.Exclude);
+        foreach (Enemy e in enemies)
+        {
+            totalPigs++;
+            if (e.enemyData != null) maxLevelScore += e.enemyData.pointValue;
+        }
+
+        DestructibleBlock[] blocks = Object.FindObjectsByType<DestructibleBlock>(FindObjectsInactive.Exclude);
+        foreach (DestructibleBlock b in blocks)
+        {
+            if (b.blockData != null) maxLevelScore += b.blockData.pointValue;
+        }
+
+        Debug.Log($"[GameManager] Level Started. Total Pigs: {totalPigs} | Max Destruction Score: {maxLevelScore}");
+    }
+
     public void PigDestroyed(string deadEnemyName)
     {
         totalPigs--;
 
-        // LOG 2: Watch the math count down exactly when it happens
-        Debug.Log($"[GameManager] {deadEnemyName} died! Enemies remaining: {totalPigs}");
-
         if (totalPigs <= 0 && !isGameOver)
         {
-            // LOG 3: Confirm the win condition was hit
-            Debug.Log("[GameManager] All enemies defeated! Locking slingshot and starting 6-second win timer.");
-
             isGameOver = true;
+
+            BirdManager bManager = Object.FindAnyObjectByType<BirdManager>();
+            if (bManager != null)
+            {
+                int leftoverBirds = bManager.GetRemainingBirdsCount();
+                int bonusPoints = leftoverBirds * pointsPerUnusedBird;
+
+                if (bonusPoints > 0)
+                {
+                    AddScore(bonusPoints);
+                }
+            }
+
+            CalculateFinalStars();
             Invoke(nameof(ShowWinScreen), 6f);
         }
     }
 
-    // --- NEW METHOD TO ADD POINTS ---
+    private void CalculateFinalStars()
+    {
+        int starsEarned = 0;
+
+        if (currentScore >= maxLevelScore * 0.8f) starsEarned = 3;
+        else if (currentScore >= maxLevelScore * 0.5f) starsEarned = 2;
+        else if (currentScore >= maxLevelScore * 0.3f) starsEarned = 1;
+
+        UpdateStarUI(starsEarned);
+        string currentLevelName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+        SaveSystem.SaveLevelProgress(currentLevelName, currentScore, starsEarned);
+    }
+
+    private void UpdateStarUI(int starsEarned)
+    {
+        // 1. Setup Left Star
+        if (starLeft != null)
+            starLeft.color = (starsEarned >= 3) ? earnedStarColor : unearnedStarColor;
+
+        // 2. Setup Center Star
+        if (starCenter != null)
+            starCenter.color = (starsEarned >= 2) ? earnedStarColor : unearnedStarColor;
+
+        // 3. Setup Right Star
+        if (starRight != null)
+            starRight.color = (starsEarned >= 1) ? earnedStarColor : unearnedStarColor;
+    }
+
+    public int GetTotalPigs() { return totalPigs; }
+
     public void AddScore(int pointsToAdd)
     {
         currentScore += pointsToAdd;
         UpdateScoreDisplay();
     }
 
-    public int GetTotalPigs()
-    {
-        return totalPigs;
-    }
-
-    // --- NEW METHOD TO UPDATE UI ---
     private void UpdateScoreDisplay()
     {
-        if (scoreText != null)
-        {
-            scoreText.text = currentScore.ToString();
-        }
+        if (scoreText != null) scoreText.text = currentScore.ToString();
     }
-
-    
 
     private void ShowWinScreen()
     {
-        isWinScreenVisible = true; // 2. Tell the physics objects to be quiet!
+        isWinScreenVisible = true;
 
         if (winScreenGroup != null)
         {
+            winScreenGroup.gameObject.SetActive(true);
             winScreenGroup.alpha = 1f;
             winScreenGroup.interactable = true;
             winScreenGroup.blocksRaycasts = true;
 
             if (AudioManager.Instance != null && AudioManager.Instance.levelWon != null)
-            {
                 AudioManager.Instance.PlaySound(AudioManager.Instance.levelWon);
-            }
+        }
+
+        if (highScoreText != null)
+        {
+            string lvlName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            highScoreText.text = "HIGH SCORE: " + SaveSystem.GetLevelHighScore(lvlName);
         }
     }
 
@@ -111,14 +173,13 @@ public class GameManager : MonoBehaviour
 
         if (loseScreenGroup != null)
         {
+            loseScreenGroup.gameObject.SetActive(true);
             loseScreenGroup.alpha = 1f;
             loseScreenGroup.interactable = true;
             loseScreenGroup.blocksRaycasts = true;
 
             if (AudioManager.Instance != null && AudioManager.Instance.levelLost != null)
-            {
                 AudioManager.Instance.PlaySound(AudioManager.Instance.levelLost);
-            }
         }
     }
 

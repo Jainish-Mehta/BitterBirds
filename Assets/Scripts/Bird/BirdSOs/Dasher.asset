@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eabb16568e6a845a3a9e5d8d92ff14, type: 3}
+  m_Name: Dasher
+  m_EditorClassIdentifier: Assembly-CSharp::BirdData
+  birdName: Dasher
+  description: The Dasher can use Straight Dash against enemies.
+  birdSprite: {fileID: -1837837335837751186, guid: 34d6470ab2dbcc34b8734e1ff03f85c2, type: 3}
+  animatorController: {fileID: 22100000, guid: ca8832886963fdb439eed4d3acb1c6db, type: 2}
+  ability: 2
+  abilityPower: 40
+  abilityRadius: 3
+  shockwavePrefab: {fileID: 0}
+  tntPrefab: {fileID: 0}

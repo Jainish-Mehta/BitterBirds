@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -24,6 +25,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip levelWon;
     public AudioClip levelLost;
 
+    private Dictionary<AudioClip, float> soundCooldownMemory = new Dictionary<AudioClip, float>();
+    private float soundCooldownTime = 0.05f;
     private void Awake()
     {
         if (Instance == null)
@@ -55,16 +58,36 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySound(AudioClip clip, float volume = 1f)
     {
-        if (clip != null && soundEffectsSpeaker != null)
+        if (clip == null || soundEffectsSpeaker == null) return;
+
+        // --- FIX 1: THE COOLDOWN SYSTEM ---
+        // Check if we have played this exact sound recently
+        if (soundCooldownMemory.TryGetValue(clip, out float lastTimePlayed))
         {
-            soundEffectsSpeaker.PlayOneShot(clip, volume);
+            // If it hasn't been 50 milliseconds yet, IGNORE THIS SOUND to prevent audio clipping!
+            if (Time.time - lastTimePlayed < soundCooldownTime)
+            {
+                return;
+            }
         }
+
+        // Record the exact time we played this sound
+        soundCooldownMemory[clip] = Time.time;
+
+        // --- FIX 2: PITCH RANDOMIZATION ---
+        // Slightly change the pitch so multiple blocks breaking sounds organic, not robotic
+        soundEffectsSpeaker.pitch = Random.Range(0.85f, 1.15f);
+
+        // Play the sound!
+        soundEffectsSpeaker.PlayOneShot(clip, volume);
     }
 
     public void PlayBirdSound(AudioClip clip)
     {
         if (clip != null && birdSpeaker != null)
         {
+            // Reset pitch to normal for bird sounds so they don't sound weird
+            birdSpeaker.pitch = 1f;
             birdSpeaker.PlayOneShot(clip);
         }
     }

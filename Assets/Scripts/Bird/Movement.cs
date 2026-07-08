@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Cinemachine;
+using UnityEngine.EventSystems; // <--- ADDED for UI detection!
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(BirdAbilities))]
 public class Movement : MonoBehaviour
 {
     [Header("Bird Data")]
@@ -24,10 +26,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private Vector2 flyingScreenPos = new Vector2(0f, 0.2f);
 
     private float currentFlightTime = 0f;
-    private bool isDragging = false;
-    private bool isFlying = false;
-    private bool hasHitObstacle = false;
     private float defaultGravity;
+    public float DefaultGravity => defaultGravity;
+
+    private bool isDragging = false;
+    public bool isFlying = false;
+    private bool hasHitObstacle = false;
+    public bool isClone = false;
 
     private Transform leftProng;
     private Transform rightProng;
@@ -42,12 +47,11 @@ public class Movement : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
     private DottedTrajectory trajectoryScript;
+    private BirdAbilities abilities;
 
     private PhysicsMaterial2D slipperyMaterial;
     private PhysicsMaterial2D normalMaterial;
-
     private Vector3 dragTargetPosition;
-
     private CinemachineCamera cineCam;
     private CinemachinePositionComposer camComposer;
 
@@ -58,18 +62,14 @@ public class Movement : MonoBehaviour
         anim = GetComponent<Animator>();
         birdCollider = GetComponent<Collider2D>();
         trajectoryScript = GetComponent<DottedTrajectory>();
+        abilities = GetComponent<BirdAbilities>();
 
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
         defaultGravity = rb.gravityScale;
         rb.bodyType = RigidbodyType2D.Kinematic;
 
-        slipperyMaterial = new PhysicsMaterial2D("SlipperyCode");
-        slipperyMaterial.friction = 0f;
-        slipperyMaterial.bounciness = 0f;
-
-        normalMaterial = new PhysicsMaterial2D("NormalCode");
-        normalMaterial.friction = 0.8f;
-        normalMaterial.bounciness = 0.0f;
+        slipperyMaterial = new PhysicsMaterial2D("SlipperyCode") { friction = 0f, bounciness = 0f };
+        normalMaterial = new PhysicsMaterial2D("NormalCode") { friction = 0.8f, bounciness = 0.0f };
         birdCollider.sharedMaterial = normalMaterial;
 
         GameObject centerObj = GameObject.Find("Center");
@@ -102,17 +102,16 @@ public class Movement : MonoBehaviour
         if (woodCollider != null) woodCollider.enabled = false;
     }
 
-    // --- THE INJECTION METHOD ---
     public void InitializeBird(BirdData data)
     {
         birdData = data;
 
+        if (abilities != null) abilities.Initialize(data);
+
         if (birdData != null)
         {
             gameObject.name = birdData.birdName;
-
             if (birdData.birdSprite != null) sr.sprite = birdData.birdSprite;
-
             if (anim != null && birdData.animatorController != null)
             {
                 anim.runtimeAnimatorController = birdData.animatorController;
@@ -126,10 +125,26 @@ public class Movement : MonoBehaviour
 
         if (isFlying)
         {
-            if (AudioManager.Instance != null)
+            if (!hasHitObstacle && abilities != null && !abilities.hasUsedAbility)
             {
-                AudioManager.Instance.UpdateFlightWind(rb.linearVelocity.magnitude);
+                bool isClicking = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+                bool isTouching = Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasPressedThisFrame;
+                bool isSpace = Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame;
+
+                if (isClicking || isTouching || isSpace)
+                {
+                    // --- PREVENT ABILITY IF CLICKING PAUSE BUTTON ---
+                    if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
+
+                    // --- PREVENT ABILITY IF PAUSED ---
+                    if (Time.timeScale == 0f) return;
+
+                    abilities.TriggerAbility();
+                }
             }
+
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.UpdateFlightWind(rb.linearVelocity.magnitude);
 
             if (!hasHitObstacle && rb.linearVelocity.sqrMagnitude > 0.1f)
             {
@@ -139,19 +154,13 @@ public class Movement : MonoBehaviour
             }
 
             currentFlightTime += Time.deltaTime;
-            if (currentFlightTime >= maxFlightDuration)
-            {
-                resetBird();
-            }
+            if (currentFlightTime >= maxFlightDuration) resetBird();
         }
     }
 
     private void FixedUpdate()
     {
-        if (isDragging)
-        {
-            rb.MovePosition(dragTargetPosition);
-        }
+        if (isDragging) rb.MovePosition(dragTargetPosition);
     }
 
     private void LateUpdate()
@@ -166,20 +175,12 @@ public class Movement : MonoBehaviour
         if (isFlying || hasHitObstacle)
         {
             cineCam.Follow = this.transform;
-            camComposer.Composition.ScreenPosition = Vector2.Lerp(
-                camComposer.Composition.ScreenPosition,
-                flyingScreenPos,
-                Time.deltaTime * 4f
-            );
+            camComposer.Composition.ScreenPosition = Vector2.Lerp(camComposer.Composition.ScreenPosition, flyingScreenPos, Time.deltaTime * 4f);
         }
         else
         {
             cineCam.Follow = slingShotCenter;
-            camComposer.Composition.ScreenPosition = Vector2.Lerp(
-                camComposer.Composition.ScreenPosition,
-                slingshotScreenPos,
-                Time.deltaTime * 4f
-            );
+            camComposer.Composition.ScreenPosition = Vector2.Lerp(camComposer.Composition.ScreenPosition, slingshotScreenPos, Time.deltaTime * 4f);
         }
     }
 
@@ -194,6 +195,11 @@ public class Movement : MonoBehaviour
 
         if (Pointer.current.press.wasPressedThisFrame)
         {
+            // =========================================================
+            // THE FIX: PREVENT DRAGGING IF PAUSED OR CLICKING UI!
+            // =========================================================
+            if (Time.timeScale == 0f) return;
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
             if (GameManager.Instance != null && GameManager.Instance.isGameOver) return;
 
             float distanceToBird = Vector2.Distance(pointerWorldPosition, transform.position);
@@ -204,17 +210,14 @@ public class Movement : MonoBehaviour
 
                 isDragging = true;
                 hasHitObstacle = false;
-
                 rb.bodyType = RigidbodyType2D.Dynamic;
                 rb.gravityScale = 0f;
-
                 birdCollider.sharedMaterial = slipperyMaterial;
                 if (woodCollider != null)
                 {
                     woodCollider.enabled = true;
                     woodCollider.sharedMaterial = slipperyMaterial;
                 }
-
                 dragTargetPosition = transform.position;
             }
         }
@@ -224,7 +227,6 @@ public class Movement : MonoBehaviour
             if (isDragging)
             {
                 isDragging = false;
-
                 if (leftLine != null) leftLine.enabled = false;
                 if (rightLine != null) rightLine.enabled = false;
                 if (woodCollider != null) woodCollider.enabled = false;
@@ -256,14 +258,9 @@ public class Movement : MonoBehaviour
         if (isDragging)
         {
             Vector3 pullDirection = (pointerWorldPosition - slingShotCenter.position);
-
-            if (pullDirection.magnitude > maxDragDistance)
-            {
-                pullDirection = pullDirection.normalized * maxDragDistance;
-            }
+            if (pullDirection.magnitude > maxDragDistance) pullDirection = pullDirection.normalized * maxDragDistance;
 
             dragTargetPosition = slingShotCenter.position + pullDirection;
-
             Vector2 lookDirection = slingShotCenter.position - transform.position;
             float angle = Mathf.Atan2(lookDirection.y, lookDirection.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -276,7 +273,6 @@ public class Movement : MonoBehaviour
                 Vector2 shootDirection = (Vector2)slingShotCenter.position - (Vector2)transform.position;
                 Vector2 shootForce = shootDirection * power;
                 Vector2 facePosition = (Vector2)transform.position + (shootDirection.normalized * birdRadius);
-
                 trajectoryScript.ShowTrajectory(facePosition, shootForce, rb.mass, defaultGravity, GetStretchRatio());
             }
         }
@@ -285,7 +281,6 @@ public class Movement : MonoBehaviour
     public float GetStretchRatio()
     {
         if (!isDragging || slingShotCenter == null || Pointer.current == null || Camera.main == null) return 0f;
-
         Vector2 pointerScreenPosition = Pointer.current.position.ReadValue();
         float zDepth = Mathf.Abs(Camera.main.transform.position.z);
         Vector3 pointerWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(pointerScreenPosition.x, pointerScreenPosition.y, zDepth));
@@ -299,16 +294,12 @@ public class Movement : MonoBehaviour
     {
         if (leftLine != null && rightLine != null && leftProng != null && rightProng != null)
         {
-            leftLine.enabled = true;
-            rightLine.enabled = true;
-
+            leftLine.enabled = true; rightLine.enabled = true;
             Vector3 dirFromCenter = (transform.position - slingShotCenter.position).normalized;
             Vector3 bandAttachPoint = transform.position + (dirFromCenter * birdRadius);
 
-            leftLine.SetPosition(0, leftProng.position);
-            leftLine.SetPosition(1, bandAttachPoint);
-            rightLine.SetPosition(0, rightProng.position);
-            rightLine.SetPosition(1, bandAttachPoint);
+            leftLine.SetPosition(0, leftProng.position); leftLine.SetPosition(1, bandAttachPoint);
+            rightLine.SetPosition(0, rightProng.position); rightLine.SetPosition(1, bandAttachPoint);
         }
     }
 
@@ -316,40 +307,34 @@ public class Movement : MonoBehaviour
     {
         CancelInvoke(nameof(resetBird));
 
+        if (isClone)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         isFlying = false;
         hasHitObstacle = false;
 
         if (trajectoryScript != null) trajectoryScript.HideTrajectory();
-
-        if (AudioManager.Instance != null)
-        {
-            AudioManager.Instance.UpdateFlightWind(0f);
-        }
+        if (AudioManager.Instance != null) AudioManager.Instance.UpdateFlightWind(0f);
 
         BirdManager manager = Object.FindAnyObjectByType<BirdManager>();
-
-        if (manager != null)
-        {
-            manager.BirdFinishedTurn();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (manager != null) manager.BirdFinishedTurn();
+        else Destroy(gameObject);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        rb.gravityScale = defaultGravity;
+
         if (isFlying)
         {
             hasHitObstacle = true;
-            Invoke(nameof(resetBird), resetDelayAfterCollision);
             isFlying = false;
 
-            if (AudioManager.Instance != null)
-            {
-                AudioManager.Instance.UpdateFlightWind(0f);
-            }
+            if (AudioManager.Instance != null) AudioManager.Instance.UpdateFlightWind(0f);
+            Invoke(nameof(resetBird), resetDelayAfterCollision);
         }
     }
 
@@ -357,12 +342,13 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Boundary Limits"))
         {
-            if (AudioManager.Instance != null)
-            {
-                AudioManager.Instance.UpdateFlightWind(0f);
-            }
-
+            if (AudioManager.Instance != null) AudioManager.Instance.UpdateFlightWind(0f);
             resetBird();
         }
+    }
+
+    private void OnDestroy()
+    {
+        if (isFlying && AudioManager.Instance != null) AudioManager.Instance.UpdateFlightWind(0f);
     }
 }

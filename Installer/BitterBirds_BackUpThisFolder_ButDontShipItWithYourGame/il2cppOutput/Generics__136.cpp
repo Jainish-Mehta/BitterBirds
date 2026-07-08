@@ -32131,7 +32131,7 @@ IL2CPP_EXTERN_C  RuntimeObject* ReadOnlyMemory_1_GetObjectStartLength_m76D2DB58E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97129
+// Method Definition Index: 97174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyNativeVector_1__ctor_mF7DD618935CE0A1EC2A43B7352BA3B629146BA34_gshared (ReadOnlyNativeVector_1_t0DE13C6BA89CEDB2D828D3F45AA93F7EC7AD4A0E* __this, intptr_t ___0_ptr, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32157,7 +32157,7 @@ IL2CPP_EXTERN_C  void ReadOnlyNativeVector_1__ctor_mF7DD618935CE0A1EC2A43B7352BA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97129
+// Method Definition Index: 97174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyNativeVector_1__ctor_m3E6D67CE32EF6A24BB28C7323BC21559AC743B18_gshared (ReadOnlyNativeVector_1_t53A6814B9ECC2D21CA860DE85D9AEB86D11F6F17* __this, intptr_t ___0_ptr, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32183,7 +32183,7 @@ IL2CPP_EXTERN_C  void ReadOnlyNativeVector_1__ctor_m3E6D67CE32EF6A24BB28C7323BC2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 97129
+// Method Definition Index: 97174
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyNativeVector_1__ctor_m64EB14620E394C425562A5F9AD826C959C29BD96_gshared (ReadOnlyNativeVector_1_tE45C179B8DFEAD70E1F59D744D5C6999873C0FFC* __this, intptr_t ___0_ptr, int32_t ___1_size, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32209,7 +32209,7 @@ IL2CPP_EXTERN_C  void ReadOnlyNativeVector_1__ctor_m64EB14620E394C425562A5F9AD82
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 48704
+// Method Definition Index: 48712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1__ctor_m4419FA66B84E4CCD02868DF8E11EEA8D94F61EAB_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, ObservableCollection_1_tE47F2087FEB0CBCB2B73E995AF74710B883ABC62* ___0_list, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -32242,7 +32242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1__ctor_m44
 		return;
 	}
 }
-// Method Definition Index: 48705
+// Method Definition Index: 48713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_Collections_Specialized_INotifyCollectionChanged_add_CollectionChanged_m2389EAB238A1564C57453270D8106B6F40E4101C_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, NotifyCollectionChangedEventHandler_t521FADBD1190F88022BC2160A5F82FDFC08364AF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32252,7 +32252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_Co
 		return;
 	}
 }
-// Method Definition Index: 48706
+// Method Definition Index: 48714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_Collections_Specialized_INotifyCollectionChanged_remove_CollectionChanged_m4292ECCE52CA6C900FE55251A9A59854C17C2AEC_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, NotifyCollectionChangedEventHandler_t521FADBD1190F88022BC2160A5F82FDFC08364AF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32262,7 +32262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_Co
 		return;
 	}
 }
-// Method Definition Index: 48707
+// Method Definition Index: 48715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_add_CollectionChanged_mCBFB4BDE73131ABB534E9A9368132C47B50ED20A_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, NotifyCollectionChangedEventHandler_t521FADBD1190F88022BC2160A5F82FDFC08364AF* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -32306,7 +32306,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 48708
+// Method Definition Index: 48716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_remove_CollectionChanged_mC62831BF07C4EA495834D67B38A0931323A44625_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, NotifyCollectionChangedEventHandler_t521FADBD1190F88022BC2160A5F82FDFC08364AF* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -32350,7 +32350,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 48709
+// Method Definition Index: 48717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_OnCollectionChanged_m51E72E8534A50EB7C23117032D9585D096846249_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, NotifyCollectionChangedEventArgs_tFF32515F3E2B116CAB376B5B57C6A8CB617351FA* ___0_args, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32373,7 +32373,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 48710
+// Method Definition Index: 48718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_ComponentModel_INotifyPropertyChanged_add_PropertyChanged_m6C3C19C2D9BA4255BB310D0E1F8DB040057FC81B_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32383,7 +32383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_Co
 		return;
 	}
 }
-// Method Definition Index: 48711
+// Method Definition Index: 48719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_ComponentModel_INotifyPropertyChanged_remove_PropertyChanged_mD6A5EC6844DD60026EE7D481A899A65708F754F5_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32393,7 +32393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_System_Co
 		return;
 	}
 }
-// Method Definition Index: 48712
+// Method Definition Index: 48720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_add_PropertyChanged_m42F8F6353DFB51DD24C3D24E84EB68828534388F_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -32437,7 +32437,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 48713
+// Method Definition Index: 48721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_remove_PropertyChanged_m0152E22645D39C2A4B5AB3219EAA97211F6AE333_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -32481,7 +32481,7 @@ IL_0007:
 		return;
 	}
 }
-// Method Definition Index: 48714
+// Method Definition Index: 48722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_OnPropertyChanged_m4C1B22767B06B4B2B2D839D97A827AFFECCD152E_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, PropertyChangedEventArgs_tFA01343D8F2BD799951B40A3EBF4A6B38EE63321* ___0_args, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32504,7 +32504,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 48715
+// Method Definition Index: 48723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_HandleCollectionChanged_mFA189DD138C1FC963980E81A6C28F8C1EEBD9890_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, RuntimeObject* ___0_sender, NotifyCollectionChangedEventArgs_tFF32515F3E2B116CAB376B5B57C6A8CB617351FA* ___1_e, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32514,7 +32514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_HandleCol
 		return;
 	}
 }
-// Method Definition Index: 48716
+// Method Definition Index: 48724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadOnlyObservableCollection_1_HandlePropertyChanged_m95A8AFF97F1E520B6F52639DC8DAEBA0E896AAAB_gshared (ReadOnlyObservableCollection_1_tDDB997B5588C61C7ACD439AF6BF94358E788B352* __this, RuntimeObject* ___0_sender, PropertyChangedEventArgs_tFA01343D8F2BD799951B40A3EBF4A6B38EE63321* ___1_e, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -32536,14 +32536,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 48819
+// Method Definition Index: 48827
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NotifyCollectionChangedEventHandler_Invoke_m8DED5705E365E59E2F6BDCBC6D6D762DA1ECA194_inline (NotifyCollectionChangedEventHandler_t521FADBD1190F88022BC2160A5F82FDFC08364AF* __this, RuntimeObject* ___0_sender, NotifyCollectionChangedEventArgs_tFF32515F3E2B116CAB376B5B57C6A8CB617351FA* ___1_e, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, NotifyCollectionChangedEventArgs_tFF32515F3E2B116CAB376B5B57C6A8CB617351FA*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_sender, ___1_e, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 48297
+// Method Definition Index: 48305
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PropertyChangedEventHandler_Invoke_m040B3056C279FDDC4EC678519D5D415771905298_inline (PropertyChangedEventHandler_tF1250C146BE6FB43477D29C5D18A10B6329419DA* __this, RuntimeObject* ___0_sender, PropertyChangedEventArgs_tFA01343D8F2BD799951B40A3EBF4A6B38EE63321* ___1_e, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>

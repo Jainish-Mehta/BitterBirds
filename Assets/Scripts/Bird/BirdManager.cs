@@ -127,6 +127,13 @@ public class BirdManager : MonoBehaviour
         LoadNextBird();
     }
 
+    public int GetRemainingBirdsCount()
+    {
+        int remaining = activeBirds.Count - currentBirdIndex;
+
+        return Mathf.Max(0, remaining);
+    }
+
     private IEnumerator CheckForGameOver()
     {
         yield return new WaitForSeconds(4f);

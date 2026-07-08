@@ -16,3 +16,8 @@ MonoBehaviour:
   description: The Post Bird delivers the bomb to the enemies.
   birdSprite: {fileID: -1837837335837751186, guid: 72371c12e8ec4b04fb3b7fda14215de7, type: 3}
   animatorController: {fileID: 22100000, guid: 48fdb8c42b6e4254496763dc91655e6d, type: 2}
+  ability: 3
+  abilityPower: 10
+  abilityRadius: 3
+  shockwavePrefab: {fileID: 0}
+  tntPrefab: {fileID: 3255473866925619302, guid: b4d98bbe5842c534ab6b9bc940bba015, type: 3}
