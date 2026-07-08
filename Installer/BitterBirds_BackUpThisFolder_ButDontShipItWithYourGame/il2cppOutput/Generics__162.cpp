@@ -8231,7 +8231,7 @@ IL_00f8:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 50659
+// Method Definition Index: 50661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mBDDC293E03F391AA6A73AD5F75511875CD4149DE_gshared (TaskSocketAsyncEventArgs_1_tBF4E736DC8FCB94FF74068992FE40D092F521E90* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8240,7 +8240,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mBDDC29
 		return;
 	}
 }
-// Method Definition Index: 50660
+// Method Definition Index: 50662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_tF0BDBC54D5EB433C1205550D0F9819F43C9D4019 TaskSocketAsyncEventArgs_1_GetCompletionResponsibility_m6567C4DB5B1FE07B600E6EA1FB6303666B5E97B5_gshared (TaskSocketAsyncEventArgs_1_tBF4E736DC8FCB94FF74068992FE40D092F521E90* __this, bool* ___0_responsibleForReturningToPool, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8316,7 +8316,7 @@ IL_003a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 50659
+// Method Definition Index: 50661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mF0082410EEA8CC90CDA9375305EA3F31F7DB4896_gshared (TaskSocketAsyncEventArgs_1_t23D2205428108A011DF00EAA6FA768E03F90E8E9* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8325,7 +8325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mF00824
 		return;
 	}
 }
-// Method Definition Index: 50660
+// Method Definition Index: 50662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_t31704F68930DF2486DF918AE675E24CF970AD016 TaskSocketAsyncEventArgs_1_GetCompletionResponsibility_mBF3E831A051AC28CD36B29DFAF8F46B3CE84DC1D_gshared (TaskSocketAsyncEventArgs_1_t23D2205428108A011DF00EAA6FA768E03F90E8E9* __this, bool* ___0_responsibleForReturningToPool, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8401,7 +8401,7 @@ IL_003a:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 50659
+// Method Definition Index: 50661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mD523E66FB86F8916B7CC84E9BF26304AC2500C67_gshared (TaskSocketAsyncEventArgs_1_t469108EDA49471DE9AF3FB9110FA49DFAA12E3C1* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8410,7 +8410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TaskSocketAsyncEventArgs_1__ctor_mD523E6
 		return;
 	}
 }
-// Method Definition Index: 50660
+// Method Definition Index: 50662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncTaskMethodBuilder_1_t9A3ADCFF6503F4230FFD38F6C333EBCF1A034AF4 TaskSocketAsyncEventArgs_1_GetCompletionResponsibility_mDBBDA9DFC99BC113A36D91A508332E7BC9E9025E_gshared (TaskSocketAsyncEventArgs_1_t469108EDA49471DE9AF3FB9110FA49DFAA12E3C1* __this, bool* ___0_responsibleForReturningToPool, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25954,7 +25954,7 @@ IL_001c:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 74501
+// Method Definition Index: 74503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1__ctor_mD8762657DB7CFF54E221BCCDC16CB67414537715_gshared (TelemetryQueue_1_tF695414AC220D92042104DF42FECD4367D0CE287* __this, Action_1_tDFA07721F7B30D725AB3362A163481CA1213C478* ___0_sendTelemetryEvent, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25966,7 +25966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1__ctor_mD8762657DB7CFF54
 		return;
 	}
 }
-// Method Definition Index: 74502
+// Method Definition Index: 74504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1_QueueEvent_m16FF2E1808B5CF14F0EB49099492D8E4ECBBBAC6_gshared (TelemetryQueue_1_tF695414AC220D92042104DF42FECD4367D0CE287* __this, TelemetryDiagnosticParams_t69BC794FB4BFEF4DA451F7C0A015C56D07573BD5 ___0_telemetryEvent, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26013,7 +26013,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 74503
+// Method Definition Index: 74505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1_SendQueuedEvents_m8580596CACF85E8BBF5E29230EF5D7D9BD374830_gshared (TelemetryQueue_1_tF695414AC220D92042104DF42FECD4367D0CE287* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26071,7 +26071,7 @@ IL_002e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 74501
+// Method Definition Index: 74503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1__ctor_m476C561CC4965A4906150F24CB67141DC5A801C1_gshared (TelemetryQueue_1_t6A9049A79DE676112D1E3C56AA0891710858E96C* __this, Action_1_t9F220133D9FF020AC08674697843E6AFC581294E* ___0_sendTelemetryEvent, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26083,7 +26083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1__ctor_m476C561CC4965A49
 		return;
 	}
 }
-// Method Definition Index: 74502
+// Method Definition Index: 74504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1_QueueEvent_mCE2AF3D0D3ECC9FD0C942018A739A0B05653502B_gshared (TelemetryQueue_1_t6A9049A79DE676112D1E3C56AA0891710858E96C* __this, TelemetryMetricParams_t2E8F02171EC287877B7A84BD581CA2947D3660C3 ___0_telemetryEvent, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26130,7 +26130,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 74503
+// Method Definition Index: 74505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1_SendQueuedEvents_mDC0A3301BA17812B991E93801AF59E6902887B31_gshared (TelemetryQueue_1_t6A9049A79DE676112D1E3C56AA0891710858E96C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26188,7 +26188,7 @@ IL_002e:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 74501
+// Method Definition Index: 74503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1__ctor_m1E15185E66E838000E9203D7A9A0D97404445E95_gshared (TelemetryQueue_1_tAE34B594FCA2904B39C4530F3047B555445C2F7B* __this, Action_1_t923A20D1D4F6B55B2ED5AE21B90F1A0CE0450D99* ___0_sendTelemetryEvent, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26200,7 +26200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1__ctor_m1E15185E66E83800
 		return;
 	}
 }
-// Method Definition Index: 74502
+// Method Definition Index: 74504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1_QueueEvent_m879338950408AAE65774BBFFD745F08BF5BA5E97_gshared (TelemetryQueue_1_tAE34B594FCA2904B39C4530F3047B555445C2F7B* __this, Il2CppFullySharedGenericAny ___0_telemetryEvent, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TTelemetryEventParams_t8A71E5B35BD6D69D2B8866E1AF0605A717DD883D = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 4));
@@ -26249,7 +26249,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 74503
+// Method Definition Index: 74505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TelemetryQueue_1_SendQueuedEvents_m2B6D7B2020889CE1D851F61EEF84A3E1BD6257A3_gshared (TelemetryQueue_1_tAE34B594FCA2904B39C4530F3047B555445C2F7B* __this, const RuntimeMethod* method) 
 {
 	const uint32_t SizeOf_TTelemetryEventParams_t8A71E5B35BD6D69D2B8866E1AF0605A717DD883D = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 4));

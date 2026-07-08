@@ -58,6 +58,9 @@ MonoBehaviour:
   - m_enabled: 1
     m_path: Assets/Scenes/CommingSoon.unity
     m_guid: db2b1b7af2c40a64c8e80b232099901a
+  - m_enabled: 1
+    m_path: Assets/Scenes/SelectLevelMap.unity
+    m_guid: 7fe9ec2fa07a11c4d88971be5ab645f6
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
@@ -366,7 +369,7 @@ MonoBehaviour:
     - line: '|   - m_BuildTarget: '
     - line: '|     m_Icons:'
     - line: '|     - serializedVersion: 2'
-    - line: '|       m_Icon: {fileID: 2800000, guid: e9f8eb5b27029ed4c83e644beec384dc,
+    - line: '|       m_Icon: {fileID: 2800000, guid: 72371c12e8ec4b04fb3b7fda14215de7,
         type: 3}'
     - line: '|       m_Width: 128'
     - line: '|       m_Height: 128'
@@ -534,7 +537,7 @@ MonoBehaviour:
     - line: '|     - m_Textures:'
     - line: '|       - {fileID: 2800000, guid: b396b893468247e4e830f07e49784db7,
         type: 3}'
-    - line: '|       - {fileID: 2800000, guid: e9f8eb5b27029ed4c83e644beec384dc,
+    - line: '|       - {fileID: 2800000, guid: 72371c12e8ec4b04fb3b7fda14215de7,
         type: 3}'
     - line: '|       m_Width: 432'
     - line: '|       m_Height: 432'

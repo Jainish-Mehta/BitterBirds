@@ -17,7 +17,7 @@ MonoBehaviour:
   birdSprite: {fileID: -1837837335837751186, guid: 34d6470ab2dbcc34b8734e1ff03f85c2, type: 3}
   animatorController: {fileID: 22100000, guid: ca8832886963fdb439eed4d3acb1c6db, type: 2}
   ability: 2
-  abilityPower: 40
+  abilityPower: 80
   abilityRadius: 3
   shockwavePrefab: {fileID: 0}
   tntPrefab: {fileID: 0}

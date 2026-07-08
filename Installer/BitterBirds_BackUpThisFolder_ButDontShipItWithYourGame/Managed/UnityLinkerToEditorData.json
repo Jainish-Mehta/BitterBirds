@@ -155,7 +155,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -193,7 +194,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -285,7 +287,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -348,7 +351,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -373,7 +377,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -416,7 +421,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -459,7 +465,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -502,7 +509,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -539,7 +547,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -564,7 +573,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -583,7 +593,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -632,7 +643,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -657,7 +669,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -700,7 +713,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -737,7 +751,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -2529,7 +2544,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -2566,7 +2582,8 @@
               "Assets/Scenes/Level6.unity",
               "Assets/Scenes/Level7.unity",
               "Assets/Scenes/Level8.unity",
-              "Assets/Scenes/Level9.unity"
+              "Assets/Scenes/Level9.unity",
+              "Assets/Scenes/SelectLevelMap.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -2639,6 +2656,12 @@
       {
         "name": "UnityConnect",
         "dependencies": [
+          {
+            "name": "UnityConnectSettings",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
           {
             "name": "Required by CrashReporting Module",
             "scenes": [],

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Score UI")]
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI highScoreText;
+    public TextMeshProUGUI scoreTag;
     public int pointsPerUnusedBird = 10000;
 
     [Header("Star UI System")]
@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
     public Image starCenter;
     public Image starRight;
 
-    // --- THE FIX: We use Color instead of empty sprites! ---
     [Tooltip("What color should the star be when earned? (Usually Pure White)")]
     public Color earnedStarColor = Color.white;
 
@@ -41,7 +40,7 @@ public class GameManager : MonoBehaviour
         else Destroy(gameObject);
 
 #if !UNITY_EDITOR
-            Debug.unityLogger.logEnabled = false;
+        Debug.unityLogger.logEnabled = false;
 #endif
     }
 
@@ -85,20 +84,9 @@ public class GameManager : MonoBehaviour
         if (totalPigs <= 0 && !isGameOver)
         {
             isGameOver = true;
+            Debug.Log("[GameManager] All enemies defeated! Waiting for physics to settle...");
 
-            BirdManager bManager = Object.FindAnyObjectByType<BirdManager>();
-            if (bManager != null)
-            {
-                int leftoverBirds = bManager.GetRemainingBirdsCount();
-                int bonusPoints = leftoverBirds * pointsPerUnusedBird;
-
-                if (bonusPoints > 0)
-                {
-                    AddScore(bonusPoints);
-                }
-            }
-
-            CalculateFinalStars();
+            // THE FIX: We removed the double-bonus from here! Just start the timer.
             Invoke(nameof(ShowWinScreen), 6f);
         }
     }
@@ -112,24 +100,43 @@ public class GameManager : MonoBehaviour
         else if (currentScore >= maxLevelScore * 0.3f) starsEarned = 1;
 
         UpdateStarUI(starsEarned);
+
         string currentLevelName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+        int oldHighScore = SaveSystem.GetLevelHighScore(currentLevelName);
+        Debug.Log($"[GameManager] Old High Score for {currentLevelName}: {oldHighScore} | Current Score: {currentScore} | Stars Earned: {starsEarned}");
+
+        if (currentScore > oldHighScore)
+        {
+            if (scoreTag != null)
+            {
+                scoreTag.text = "NEW HIGH SCORE!";
+                scoreTag.color = Color.yellow;
+            }
+        }
+        else
+        {
+            if (scoreTag != null)
+            {
+                scoreTag.text = "SCORE";
+                scoreTag.color = Color.white;
+            }
+        }
 
         SaveSystem.SaveLevelProgress(currentLevelName, currentScore, starsEarned);
     }
 
     private void UpdateStarUI(int starsEarned)
     {
-        // 1. Setup Left Star
+        // THE FIX: Left star needs 1, Center needs 2, Right needs 3!
         if (starLeft != null)
-            starLeft.color = (starsEarned >= 3) ? earnedStarColor : unearnedStarColor;
+            starLeft.color = (starsEarned >= 1) ? earnedStarColor : unearnedStarColor;
 
-        // 2. Setup Center Star
         if (starCenter != null)
             starCenter.color = (starsEarned >= 2) ? earnedStarColor : unearnedStarColor;
 
-        // 3. Setup Right Star
         if (starRight != null)
-            starRight.color = (starsEarned >= 1) ? earnedStarColor : unearnedStarColor;
+            starRight.color = (starsEarned >= 3) ? earnedStarColor : unearnedStarColor;
     }
 
     public int GetTotalPigs() { return totalPigs; }
@@ -147,6 +154,24 @@ public class GameManager : MonoBehaviour
 
     private void ShowWinScreen()
     {
+        // 1. ADD BIRD BONUS NOW (After all physics have settled!)
+        BirdManager bManager = Object.FindAnyObjectByType<BirdManager>();
+        if (bManager != null)
+        {
+            int leftoverBirds = bManager.GetRemainingBirdsCount();
+            int bonusPoints = leftoverBirds * pointsPerUnusedBird;
+
+            if (bonusPoints > 0)
+            {
+                Debug.Log($"[GameManager] Saved {leftoverBirds} birds! Adding {bonusPoints} bonus points!");
+                AddScore(bonusPoints);
+            }
+        }
+
+        // 2. CALCULATE STARS AND SAVE THE GAME
+        CalculateFinalStars();
+
+        // 3. SHOW THE UI
         isWinScreenVisible = true;
 
         if (winScreenGroup != null)
@@ -157,13 +182,9 @@ public class GameManager : MonoBehaviour
             winScreenGroup.blocksRaycasts = true;
 
             if (AudioManager.Instance != null && AudioManager.Instance.levelWon != null)
+            {
                 AudioManager.Instance.PlaySound(AudioManager.Instance.levelWon);
-        }
-
-        if (highScoreText != null)
-        {
-            string lvlName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-            highScoreText.text = "HIGH SCORE: " + SaveSystem.GetLevelHighScore(lvlName);
+            }
         }
     }
 

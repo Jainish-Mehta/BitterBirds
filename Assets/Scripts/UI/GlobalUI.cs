@@ -6,12 +6,9 @@ public class GlobalUI : MonoBehaviour
     private static GlobalUI instance;
     private Canvas globalCanvas;
 
-    // --- THIS IS THE MAGIC ---
-    // This command tells Unity to run this code automatically BEFORE the first scene even loads!
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void AutoSpawn()
     {
-        // It looks inside your "Resources" folder for a prefab named "GlobalUI" and spawns it automatically!
         GameObject prefab = Resources.Load<GameObject>("GlobalUI");
         if (prefab != null)
         {
@@ -25,11 +22,10 @@ public class GlobalUI : MonoBehaviour
 
     private void Awake()
     {
-        // 1. Make sure only ONE of these ever exists
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // TELL UNITY NEVER TO DESTROY THIS WHEN CHANGING LEVELS!
+            DontDestroyOnLoad(gameObject);
 
             globalCanvas = GetComponent<Canvas>();
             SceneManager.sceneLoaded += OnSceneLoaded;
@@ -42,10 +38,20 @@ public class GlobalUI : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Optional: Hide this UI if we are on the Main Menu (Index 0), but show it on all levels!
         if (globalCanvas != null)
         {
-            globalCanvas.enabled = (scene.buildIndex != 0);
+            string currentScene = scene.name;
+            // Only show the UI if the scene is an actual gameplay level (e.g. "Level1", "Level2")
+            // Make sure it hides on "MainMenu" and "LevelSelect"!
+
+            if (currentScene.StartsWith("Level"))
+            {
+                globalCanvas.enabled = true; // Show the Pause/Restart buttons!
+            }
+            else
+            {
+                globalCanvas.enabled = false; // Hide them!
+            }
         }
     }
 

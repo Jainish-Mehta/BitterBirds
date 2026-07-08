@@ -29,10 +29,11 @@ public class Movement : MonoBehaviour
     private float defaultGravity;
     public float DefaultGravity => defaultGravity;
 
-    private bool isDragging = false;
+    public bool isDragging = false;
     public bool isFlying = false;
-    private bool hasHitObstacle = false;
     public bool isClone = false;
+
+    private bool hasHitObstacle = false;
 
     private Transform leftProng;
     private Transform rightProng;
@@ -245,6 +246,12 @@ public class Movement : MonoBehaviour
 
                 if (GameManager.Instance != null) GameManager.Instance.hasBirdLaunched = true;
                 if (trajectoryScript != null) trajectoryScript.HideTrajectory();
+
+                BirdManager manager = Object.FindAnyObjectByType<BirdManager>();
+                if (manager != null)
+                {
+                    manager.RecordBirdLaunch();
+                }
 
                 if (AudioManager.Instance != null)
                 {

@@ -2,6 +2,8 @@ using UnityEngine;
 using Unity.Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class BirdManager : MonoBehaviour
 {
@@ -15,17 +17,22 @@ public class BirdManager : MonoBehaviour
     [Tooltip("How far apart should the birds stand in the waiting line?")]
     public float spacingDistance = 1.5f;
 
-    private Transform slingshotCenter;
+    public Transform slingshotCenter; // <--- FIX: Made public so you can drag it in!
     private CinemachineCamera cineCam;
 
     private List<GameObject> activeBirds = new List<GameObject>();
     private int currentBirdIndex = 0;
+    private int usedBirdsCount = 0;
     private GameObject currentActiveBird;
 
     private void Awake()
     {
-        GameObject centerObj = GameObject.Find("Center");
-        if (centerObj != null) slingshotCenter = centerObj.transform;
+        // Only auto-find if you forgot to drag it in
+        if (slingshotCenter == null)
+        {
+            GameObject centerObj = GameObject.Find("Center");
+            if (centerObj != null) slingshotCenter = centerObj.transform;
+        }
 
         GameObject camObj = GameObject.Find("CinemachineCamera");
         if (camObj != null) cineCam = camObj.GetComponent<CinemachineCamera>();
@@ -40,7 +47,7 @@ public class BirdManager : MonoBehaviour
             return;
         }
 
-        // SPAWN THE BIRDS
+        // 1. SPAWN THE BIRDS
         for (int i = 0; i < birdsForThisLevel.Length; i++)
         {
             if (birdsForThisLevel[i] != null)
@@ -58,12 +65,73 @@ public class BirdManager : MonoBehaviour
             }
         }
 
-        // Put them in their starting positions
+        // 2. Put them in their starting positions using your Auto-Lineup logic!
         UpdateWaitingLinePositions();
 
-        // Load the first bird!
+        // 3. Load the first bird!
         LoadNextBird();
     }
+
+    // =========================================================
+    // SWAP BIRDS MECHANIC
+    // =========================================================
+    private void Update()
+    {
+        if (Time.timeScale == 0f) return;
+        if (GameManager.Instance != null && GameManager.Instance.isGameOver) return;
+        if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
+
+        if (Pointer.current != null && Pointer.current.press.wasPressedThisFrame)
+        {
+            if (currentActiveBird != null)
+            {
+                Movement currentMove = currentActiveBird.GetComponent<Movement>();
+                if (currentMove != null && (currentMove.isFlying || currentMove.isDragging)) return;
+            }
+
+            Vector2 screenPos = Pointer.current.position.ReadValue();
+            Vector3 worldPos = Camera.main.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, -Camera.main.transform.position.z));
+
+            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                GameObject clickedObj = hit.collider.gameObject;
+
+                int clickedIndex = activeBirds.IndexOf(clickedObj);
+                int activeIndex = currentBirdIndex - 1;
+
+                if (clickedIndex != -1 && clickedIndex != activeIndex && clickedIndex >= activeIndex)
+                {
+                    SwapBirds(activeIndex, clickedIndex);
+                }
+            }
+        }
+    }
+
+    private void SwapBirds(int activeIndex, int clickedIndex)
+    {
+        GameObject oldActive = activeBirds[activeIndex];
+        GameObject newActive = activeBirds[clickedIndex];
+
+        activeBirds[activeIndex] = newActive;
+        activeBirds[clickedIndex] = oldActive;
+
+        // Snap the new bird to the slingshot, and update the waiting line to push the old bird back!
+        newActive.transform.position = slingshotCenter.position;
+        UpdateWaitingLinePositions();
+
+        oldActive.GetComponent<Movement>().enabled = false;
+        newActive.GetComponent<Movement>().enabled = true;
+
+        currentActiveBird = newActive;
+
+        if (cineCam != null) cineCam.Follow = currentActiveBird.transform;
+
+        if (AudioManager.Instance != null) AudioManager.Instance.PlayBirdSound(AudioManager.Instance.snap);
+    }
+
+    // =========================================================
 
     public void LoadNextBird()
     {
@@ -74,7 +142,6 @@ public class BirdManager : MonoBehaviour
         }
 
         currentActiveBird = activeBirds[currentBirdIndex];
-
         currentActiveBird.transform.position = slingshotCenter.position;
 
         Movement moveScript = currentActiveBird.GetComponent<Movement>();
@@ -88,30 +155,19 @@ public class BirdManager : MonoBehaviour
         UpdateWaitingLinePositions();
     }
 
-    // --- THE NEW SLIDING LOGIC ---
     private void UpdateWaitingLinePositions()
     {
-        // Loop through ONLY the birds that are still waiting in line
         for (int i = currentBirdIndex; i < activeBirds.Count; i++)
         {
             GameObject waitingBird = activeBirds[i];
-
-            // This calculates their "Place in Line" (0 is next, 1 is behind that, etc.)
             int placeInLine = i - currentBirdIndex;
-
-            // Find which Anchor they belong to (if you have multiple anchors)
             int anchorIndex = Mathf.Min(placeInLine, waitPositions.Length - 1);
             Transform currentAnchor = waitPositions[anchorIndex];
 
             if (currentAnchor != null)
             {
-                // If multiple birds share the same anchor, push them backwards by the spacing distance!
-                // Example: If placeInLine is 3, but they are at the last anchor, they get pushed back 3 * 1.5 = 4.5 units!
                 int offsetMultiplier = Mathf.Max(0, placeInLine - anchorIndex);
-
                 Vector3 newPos = currentAnchor.position + new Vector3(-spacingDistance * offsetMultiplier, 0, 0);
-
-                // Move the bird to its new spot!
                 waitingBird.transform.position = newPos;
             }
         }
@@ -119,18 +175,18 @@ public class BirdManager : MonoBehaviour
 
     public void BirdFinishedTurn()
     {
-        if (currentActiveBird != null)
-        {
-            Destroy(currentActiveBird);
-        }
-
+        if (currentActiveBird != null) Destroy(currentActiveBird);
         LoadNextBird();
+    }
+
+    public void RecordBirdLaunch()
+    {
+        usedBirdsCount++;
     }
 
     public int GetRemainingBirdsCount()
     {
-        int remaining = activeBirds.Count - currentBirdIndex;
-
+        int remaining = activeBirds.Count - usedBirdsCount;
         return Mathf.Max(0, remaining);
     }
 

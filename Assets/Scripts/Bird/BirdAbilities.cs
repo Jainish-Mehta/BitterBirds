@@ -130,6 +130,8 @@ public class BirdAbilities : MonoBehaviour
         rb.linearVelocity *= 1.3f;
         SpawnSplitClone(1);
         SpawnSplitClone(-1);
+        SpawnSplitClone(2);
+        SpawnSplitClone(-2);
 
         if (AudioManager.Instance != null)
             AudioManager.Instance.PlayBirdSound(AudioManager.Instance.birdYell);

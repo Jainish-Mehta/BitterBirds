@@ -78,7 +78,7 @@ public class Scene_Manager : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("SelectLevelMap");
     }
 
     public void ReloadCurrentLevel()

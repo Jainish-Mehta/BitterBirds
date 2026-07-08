@@ -357,6 +357,7 @@ UnityEngine.Animator::GetAnimatorClipInfoInternal_Injected
 UnityEngine.Animator::GetAnimatorStateInfo_Injected
 UnityEngine.Animator::ResetTriggerString_Injected
 UnityEngine.Animator::SetTriggerString_Injected
+UnityEngine.Animator::set_cullingMode_Injected
 UnityEngine.Animator::set_runtimeAnimatorController_Injected
 UnityEngine.AnimatorClipInfo::InstanceIDToAnimationClipPPtr_Injected
 UnityEngine.Application::CanStreamedLevelBeLoaded_Injected
@@ -1302,7 +1303,9 @@ UnityEngine.PlayerConnectionInternal::PollInternal
 UnityEngine.PlayerConnectionInternal::RegisterInternal_Injected
 UnityEngine.PlayerConnectionInternal::SendMessage_Injected
 UnityEngine.PlayerConnectionInternal::UnregisterInternal_Injected
+UnityEngine.PlayerPrefs::TrySetInt_Injected
 UnityEngine.PlayerPrefs::TrySetSetString_Injected
+UnityEngine.PlayerPrefs::GetInt_Injected
 UnityEngine.PlayerPrefs::GetString_Injected
 UnityEngine.PlayerPrefs::Save
 UnityEngine.PolygonCollider2D::GetTotalPointCount_Injected
@@ -1735,7 +1738,6 @@ UnityEngine.Rigidbody2D::set_linearVelocity_Injected
 UnityEngine.ScalableBufferManager::get_heightScaleFactor
 UnityEngine.ScalableBufferManager::get_widthScaleFactor
 UnityEngine.ScalableBufferManager::ResizeBuffers
-UnityEngine.SceneManagement.Scene::GetBuildIndexInternal_Injected
 UnityEngine.SceneManagement.Scene::GetGUIDInternal_Injected
 UnityEngine.SceneManagement.Scene::GetNameInternal_Injected
 UnityEngine.SceneManagement.SceneManager::get_sceneCount

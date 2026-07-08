@@ -16862,7 +16862,7 @@ IL2CPP_EXTERN_C  RuntimeObject* InlinedArray_1_System_Collections_IEnumerable_Ge
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 62521
+// Method Definition Index: 62523
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t8043629A7A3C43DC066A13C355D13E159ED9ABE1* InputAxisControllerBase_1_get_Controllers_mD1F8A3878A12C0C962DCF54ECC440BF1F057D774_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16873,7 +16873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t8043629A7A3C43DC066A13C355D13E159ED9A
 		return L_1;
 	}
 }
-// Method Definition Index: 62522
+// Method Definition Index: 62524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnValidate_m4459AFCF807A582629FB7A3EB2F6029A0F423848_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16884,7 +16884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnValidate_m44
 		return;
 	}
 }
-// Method Definition Index: 62523
+// Method Definition Index: 62525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_Reset_m5A2EF1FB76DA4D18E70FB2808531E96DF2F92AEA_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16898,7 +16898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_Reset_m5A2EF1F
 		return;
 	}
 }
-// Method Definition Index: 62524
+// Method Definition Index: 62526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnEnable_m13E467DB48B78391324EBBD25235E288EEE24B56_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16907,7 +16907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnEnable_m13E4
 		return;
 	}
 }
-// Method Definition Index: 62525
+// Method Definition Index: 62527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnDisable_mA28C28B439AD09634B33421856C3C5D8D0632EDE_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16918,7 +16918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnDisable_mA28
 		return;
 	}
 }
-// Method Definition Index: 62526
+// Method Definition Index: 62528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_SynchronizeControllers_m8B38407BB9F1A8FA08EFE46CFE8374056DC475BE_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16939,7 +16939,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_SynchronizeCon
 		return;
 	}
 }
-// Method Definition Index: 62527
+// Method Definition Index: 62529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_InitializeControllerDefaultsForAxis_m00E11F9B88155AFB99AD82F61F4EF8CBED04E818_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, AxisDescriptor_t02435D5ED1137DE2418332083EF93872D045D46D* ___0_axis, Controller_t575E6237B2CEA9EAAD02F96CA2CE84BE4AFDBFDB* ___1_controller, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16947,7 +16947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_InitializeCont
 		return;
 	}
 }
-// Method Definition Index: 62528
+// Method Definition Index: 62530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_UpdateControllers_m87449FCF9D1521B8D8E4E9BA4F2BC2154AA12928_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16987,7 +16987,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 62529
+// Method Definition Index: 62531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_UpdateControllers_m656CF7A257F65A51B8E105916F7E063C6C1D431A_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, float ___0_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17037,7 +17037,7 @@ IL_001b:
 		return;
 	}
 }
-// Method Definition Index: 62530
+// Method Definition Index: 62532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Controller_t575E6237B2CEA9EAAD02F96CA2CE84BE4AFDBFDB* InputAxisControllerBase_1_GetController_m9D3E28F2B0E4205E3B08525F099FDCFFD8100DE2_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17050,7 +17050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Controller_t575E6237B2CEA9EAAD02F96CA2CE84BE4
 		return L_2;
 	}
 }
-// Method Definition Index: 62531
+// Method Definition Index: 62533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAxisControllerBase_1_TriggerRecentering_m178686AFDF692FBF5CF2474BF826208B17F1A8D0_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17063,7 +17063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAxisControllerBase_1_TriggerRecente
 		return L_2;
 	}
 }
-// Method Definition Index: 62532
+// Method Definition Index: 62534
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1__ctor_m885BA8C9A0BCBB8052B98514C65276B89FC0A9D0_gshared (InputAxisControllerBase_1_t2D85F84523403FB59892AC39FA18908E701F13BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17086,7 +17086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1__ctor_m885BA8C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 62521
+// Method Definition Index: 62523
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t1A8B309AA0355DB0EB5F324C7AB3122A86E71349* InputAxisControllerBase_1_get_Controllers_m2E8E1D44171ADA8337C082427C32E1DB5DB747E3_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17097,7 +17097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t1A8B309AA0355DB0EB5F324C7AB3122A86E71
 		return L_1;
 	}
 }
-// Method Definition Index: 62522
+// Method Definition Index: 62524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnValidate_mF369DBB4897A4431A9E68F79BB5F97817631053B_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17108,7 +17108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnValidate_mF3
 		return;
 	}
 }
-// Method Definition Index: 62523
+// Method Definition Index: 62525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_Reset_m09152F6255DDBE868BB7AC8B948CF67E4D2574D3_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17122,7 +17122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_Reset_m09152F6
 		return;
 	}
 }
-// Method Definition Index: 62524
+// Method Definition Index: 62526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnEnable_m80B2F0B0BDB75F200DA9732F0B0FED4F2F6F5475_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17131,7 +17131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnEnable_m80B2
 		return;
 	}
 }
-// Method Definition Index: 62525
+// Method Definition Index: 62527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnDisable_m7A885C207E151EC70E8307731E8534130481EB68_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17142,7 +17142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_OnDisable_m7A8
 		return;
 	}
 }
-// Method Definition Index: 62526
+// Method Definition Index: 62528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_SynchronizeControllers_m9A354FBB992D72160BE03A7CFF9A4CF6F45F7444_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17163,7 +17163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_SynchronizeCon
 		return;
 	}
 }
-// Method Definition Index: 62527
+// Method Definition Index: 62529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_InitializeControllerDefaultsForAxis_m6CD6D9E9FCFBBE6CEE982E14C42B32ADE5FE288E_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, AxisDescriptor_t02435D5ED1137DE2418332083EF93872D045D46D* ___0_axis, Controller_t8F5FDE999371005951ED5678CF14B2B7AEAEF673* ___1_controller, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17171,7 +17171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_InitializeCont
 		return;
 	}
 }
-// Method Definition Index: 62528
+// Method Definition Index: 62530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_UpdateControllers_m5B8A283359042BF9B22886000B05FB85DC8474FD_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17211,7 +17211,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 62529
+// Method Definition Index: 62531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1_UpdateControllers_m911AD09F9B5E74C377D49F45D0F6B518C20C2FED_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, float ___0_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17261,7 +17261,7 @@ IL_001b:
 		return;
 	}
 }
-// Method Definition Index: 62530
+// Method Definition Index: 62532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Controller_t8F5FDE999371005951ED5678CF14B2B7AEAEF673* InputAxisControllerBase_1_GetController_m4D3A5CDC84FAC3F6FFEB849935E562E913105C3C_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17274,7 +17274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Controller_t8F5FDE999371005951ED5678CF14B2B7A
 		return L_2;
 	}
 }
-// Method Definition Index: 62531
+// Method Definition Index: 62533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAxisControllerBase_1_TriggerRecentering_mE20CF5A58410DD443FD6207CE8F62A3DDB47907A_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17287,7 +17287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAxisControllerBase_1_TriggerRecente
 		return L_2;
 	}
 }
-// Method Definition Index: 62532
+// Method Definition Index: 62534
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1__ctor_m362BB95722C36ACC127F72E8CF2321469C039E68_gshared (InputAxisControllerBase_1_tAFC5E5DEFA921547EC801DDD929C71960ED524F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17310,7 +17310,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerBase_1__ctor_m362BB95
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 62505
+// Method Definition Index: 62507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_Validate_mB75D6154EDBBC2E3D8F3F7C2E9435415F69ECE63_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17365,7 +17365,7 @@ IL_002c:
 		return;
 	}
 }
-// Method Definition Index: 62506
+// Method Definition Index: 62508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_OnDisable_m4E784F20B845824F66F6BA5CAF09ACC55015A5E4_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17446,7 +17446,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 62507
+// Method Definition Index: 62509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_Reset_mC3AF938172023BB3278F163C39D68E64A00E0E45_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17458,7 +17458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_Reset_mC3AF
 		return;
 	}
 }
-// Method Definition Index: 62508
+// Method Definition Index: 62510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_OnResetInput_mEE2AC5DCA0D96E87C59009AFCECF3388D6E0BF54_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17513,7 +17513,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 62509
+// Method Definition Index: 62511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_CreateControllers_m69B6318C6DDD1ABB4857C225FECD1A37C018B4B5_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_root, bool ___1_scanRecursively, bool ___2_enabled, DefaultInitializer_tC8FD7F5C2FB7AB261C059FA1FE7FBCDEBCC0287E* ___3_defaultInitializer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17788,7 +17788,7 @@ IL_018b:
 		return;
 	}
 }
-// Method Definition Index: 62510
+// Method Definition Index: 62512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_RegisterResetHandlers_m703D9D163426F3700DDC2D8A4D3FE9112D12FF53_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_root, bool ___1_scanRecursively, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17877,7 +17877,7 @@ IL_006a:
 		return;
 	}
 }
-// Method Definition Index: 62511
+// Method Definition Index: 62513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_UpdateControllers_mC4AB7C91D3B1B67FDC6603897C9E7369A6D9C51C_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_context, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18018,7 +18018,7 @@ IL_009e:
 		return;
 	}
 }
-// Method Definition Index: 62512
+// Method Definition Index: 62514
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputAxisControllerManager_1_GetControllerIndex_m1BFDE00019012684DDE5F369557942001BBAB0B3_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -18072,7 +18072,7 @@ IL_0023:
 		return (-1);
 	}
 }
-// Method Definition Index: 62513
+// Method Definition Index: 62515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Controller_t575E6237B2CEA9EAAD02F96CA2CE84BE4AFDBFDB* InputAxisControllerManager_1_GetController_m5BED8E5E84CDB3D0BA57952E3F6895072B1E394E_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -18102,7 +18102,7 @@ IL_0019:
 		return (Controller_t575E6237B2CEA9EAAD02F96CA2CE84BE4AFDBFDB*)NULL;
 	}
 }
-// Method Definition Index: 62514
+// Method Definition Index: 62516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAxisControllerManager_1_TriggerRecentering_m62700E1BDDC88D07E59D03A1C5C33286121D9FC0_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18160,7 +18160,7 @@ IL_0053:
 		return (bool)((((int32_t)((((int32_t)L_17) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 62515
+// Method Definition Index: 62517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1__ctor_m573120DFF08FD622CB3AC3B19411AAC458896396_gshared (InputAxisControllerManager_1_tB56CDCC145BC754EB8D9759BB83AB7E4DBC33ECD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18196,7 +18196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1__ctor_m5731
 		return;
 	}
 }
-// Method Definition Index: 62516
+// Method Definition Index: 62518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputAxisControllerManager_1_U3CCreateControllersU3Eg__GetControllerIndexU7C9_0_m19A077B068DCA3B317B471006902605746D87FF3_gshared (List_1_t8043629A7A3C43DC066A13C355D13E159ED9ABE1* ___0_list, RuntimeObject* ___1_owner, String_t* ___2_axisName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18278,7 +18278,7 @@ IL_0032:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 62505
+// Method Definition Index: 62507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_Validate_m45A71B840A896091C39445403C1CA3DF179895AD_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -18331,7 +18331,7 @@ IL_002c:
 		return;
 	}
 }
-// Method Definition Index: 62506
+// Method Definition Index: 62508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_OnDisable_mFF848811960288C132D3590204ECA62396D7D048_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18412,7 +18412,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 62507
+// Method Definition Index: 62509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_Reset_m0A768FF37A1D36E7019C590CB95597AA60E4D83C_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -18424,7 +18424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_Reset_m0A76
 		return;
 	}
 }
-// Method Definition Index: 62508
+// Method Definition Index: 62510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_OnResetInput_m525DD7A48023F5BEF27CB01AD57B1340A06A2DBB_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18477,7 +18477,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 62509
+// Method Definition Index: 62511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_CreateControllers_m9B4DE5F34CB10F0D7BAC2FEE5300539416AED13B_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_root, bool ___1_scanRecursively, bool ___2_enabled, DefaultInitializer_t8593FF11D66884C41F590C0D6EB99CD8AFB30C04* ___3_defaultInitializer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18749,7 +18749,7 @@ IL_018b:
 		return;
 	}
 }
-// Method Definition Index: 62510
+// Method Definition Index: 62512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_RegisterResetHandlers_mB7AD22ECB1FC1E708B3D2BED0AB903FCCAD4D7DC_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_root, bool ___1_scanRecursively, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18838,7 +18838,7 @@ IL_006a:
 		return;
 	}
 }
-// Method Definition Index: 62511
+// Method Definition Index: 62513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1_UpdateControllers_m83D172D521BE5FE9418C38A073C59F0253E6D636_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_context, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18977,7 +18977,7 @@ IL_009e:
 		return;
 	}
 }
-// Method Definition Index: 62512
+// Method Definition Index: 62514
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputAxisControllerManager_1_GetControllerIndex_mD15EC300DC62121062BEC63B55E0540F18D5865B_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19030,7 +19030,7 @@ IL_0023:
 		return (-1);
 	}
 }
-// Method Definition Index: 62513
+// Method Definition Index: 62515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Controller_t8F5FDE999371005951ED5678CF14B2B7AEAEF673* InputAxisControllerManager_1_GetController_m213D528D13CE792F2C29B812A3CA603429FADDBD_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19060,7 +19060,7 @@ IL_0019:
 		return (Controller_t8F5FDE999371005951ED5678CF14B2B7AEAEF673*)NULL;
 	}
 }
-// Method Definition Index: 62514
+// Method Definition Index: 62516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InputAxisControllerManager_1_TriggerRecentering_m2CC40DF952DEF047F55CAA6907E474E8671F4B4B_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, String_t* ___0_axisName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19116,7 +19116,7 @@ IL_0053:
 		return (bool)((((int32_t)((((int32_t)L_16) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
-// Method Definition Index: 62515
+// Method Definition Index: 62517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1__ctor_m73389F122855D3040EA03BFB720CCD7EDC753103_gshared (InputAxisControllerManager_1_t7855187F3B8EEDC4F94F3A25F7A110C2AECEB129* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19152,7 +19152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputAxisControllerManager_1__ctor_m7338
 		return;
 	}
 }
-// Method Definition Index: 62516
+// Method Definition Index: 62518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputAxisControllerManager_1_U3CCreateControllersU3Eg__GetControllerIndexU7C9_0_mDF891415F4AB021755970EE2DA508ED23A25D934_gshared (List_1_t1A8B309AA0355DB0EB5F324C7AB3122A86E71349* ___0_list, RuntimeObject* ___1_owner, String_t* ___2_axisName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28972,7 +28972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_1__ctor_m4D5061726209A52D10
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 62476
+// Method Definition Index: 62478
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputAxis_t4C79DD6D062971449AD6354D3B46C7AA4578D985* AxisGetter_Invoke_m97C87897F65D4B47FB28D5262C0CFB450C9D4647_inline (AxisGetter_t8201293996881054BEE22A04923EBF5BAE74B64A* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -29301,7 +29301,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m75C5ED2
 		return L_0;
 	}
 }
-// Method Definition Index: 62518
+// Method Definition Index: 62520
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DefaultInitializer_Invoke_mE496748659654AE7E250F55F43CF98C38E2F8BCD_gshared_inline (DefaultInitializer_tC8FD7F5C2FB7AB261C059FA1FE7FBCDEBCC0287E* __this, AxisDescriptor_t02435D5ED1137DE2418332083EF93872D045D46D* ___0_axis, Controller_t575E6237B2CEA9EAAD02F96CA2CE84BE4AFDBFDB* ___1_controller, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
