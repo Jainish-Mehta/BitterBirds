@@ -13,7 +13,9 @@ public class EnemyData : ScriptableObject
     public int pointValue = 500;
 
     [Header("Visuals")]
-    public Sprite defaultSprite; 
+    public Sprite defaultSprite;
+    [Tooltip("The color of the floating score text when this enemy dies!")]
+    public Color scoreTextColor = Color.green;
 
     [Header("Audio")]
     public AudioClip gruntSound; 

@@ -74,7 +74,10 @@ public class Enemy : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        Instantiate(poof, transform.position, Quaternion.identity);
+        if (poof != null)
+        {
+            Instantiate(poof, transform.position, Quaternion.identity);
+        }
 
         if (AudioManager.Instance != null && enemyData != null && enemyData.popSound != null)
         {
@@ -83,9 +86,9 @@ public class Enemy : MonoBehaviour
 
         if (GameManager.Instance != null && enemyData != null)
         {
-            GameManager.Instance.AddScore(enemyData.pointValue);
+            // Send the name, true (it IS an enemy), points, position, and custom color!
+            GameManager.Instance.RegisterScoreHit(enemyData.enemyName, true, enemyData.pointValue, transform.position, enemyData.scoreTextColor);
 
-            // --- NEW: Pass this specific GameObject's name to the GameManager ---
             GameManager.Instance.PigDestroyed(gameObject.name);
         }
 

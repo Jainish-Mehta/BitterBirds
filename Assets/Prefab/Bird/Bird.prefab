@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 5083719864342624978}
   - component: {fileID: 6698255804003830966}
   - component: {fileID: 1943590443007657746}
+  - component: {fileID: 28823361645246922}
+  - component: {fileID: 8769134201799385919}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Player
@@ -358,11 +360,14 @@ MonoBehaviour:
   maxDragDistance: 3
   power: 10
   birdRadius: 1
-  grabRadius: 1.5
+  grabRadius: 3
   maxFlightDuration: 15
   resetDelayAfterCollision: 5
   slingshotScreenPos: {x: -0.33, y: 0.3}
   flyingScreenPos: {x: 0, y: 0.2}
+  isDragging: 0
+  isFlying: 0
+  isClone: 0
 --- !u!114 &6698255804003830966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,5 +400,33 @@ MonoBehaviour:
   maxAimingZoom: 25
   maxFlyingZoom: 32
   zoomSpeed: 6
-  minSpeedForZoom: 2
+  minSpeedForZoom: 10
   maxSpeedForZoom: 15
+  showZoomDebugLogs: 1
+--- !u!114 &28823361645246922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106328022453883141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70752220f84d4a6429fcaa99979d5d50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BirdAbilities
+  hasUsedAbility: 0
+--- !u!114 &8769134201799385919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9106328022453883141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4940216df8c04e429bf2d915425aa10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BirdTrail
+  dotPrefab: {fileID: 5033745953217148009, guid: ae9ab3738bfc62642b9146633ee9e1d6, type: 3}
+  distanceBetweenDots: 2

@@ -21,6 +21,11 @@ public class BirdData : ScriptableObject
     public Sprite birdSprite;
     public RuntimeAnimatorController animatorController;
 
+
+    [Header("Scoring")]
+    [Tooltip("Every block this bird breaks is multiplied by this number!")]
+    public int scoreMultiplier = 1;
+
     [Header("Special Ability")]
     public BirdAbility ability = BirdAbility.None;
 

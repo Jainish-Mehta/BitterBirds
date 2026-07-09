@@ -14,8 +14,7 @@ public class Zoom : MonoBehaviour
     [SerializeField] private float maxSpeedForZoom = 15f;
 
     [Header("Debug Tools")]
-    //[SerializeField] private bool showZoomDebugLogs = true;
-
+    [SerializeField] private bool showZoomDebugLogs = true;
     private CinemachineCamera cineCam;
     private Rigidbody2D rb;
     private Movement movementScript;
@@ -38,6 +37,18 @@ public class Zoom : MonoBehaviour
     void Update()
     {
         if (cineCam == null) return;
+
+        // ==========================================
+        // THE FIX: STOP WAITING BIRDS & CLONES FROM FIGHTING!
+        // ==========================================
+        if (movementScript != null)
+        {
+            // If the bird is waiting in line (Movement disabled), don't run the zoom math!
+            if (!movementScript.enabled) return;
+
+            // If the bird is a Split Clone, don't run the zoom math!
+            if (movementScript.isClone) return;
+        }
 
         // 1. Calculate Drag Zoom
         float dragZoom = idleZoom;
@@ -64,26 +75,22 @@ public class Zoom : MonoBehaviour
         // 4. Smoothly interpolate OUR variable
         currentZoom = Mathf.Lerp(currentZoom, targetZoom, Time.deltaTime * zoomSpeed);
 
-        // ====================================================
-        // THE BRUTE FORCE FIX: Apply to EVERYTHING
-        // ====================================================
-
         // A. Tell Cinemachine to update its Lens
         var lens = cineCam.Lens;
         lens.OrthographicSize = currentZoom;
         cineCam.Lens = lens;
 
         // B. Forcefully tell the Main Camera to update instantly 
-        // (This completely bypasses any Cinemachine Brain glitches!)
         if (Camera.main != null)
         {
             Camera.main.orthographicSize = currentZoom;
         }
+    
 
-        //if (showZoomDebugLogs)
-        //{
-        //    Debug.Log($"ZOOM DETAILS | Speed: {speed:F1} | Stretch: {stretch:F2} | " +
-        //              $"Target: {targetZoom:F2} | Actual Camera Size: {currentZoom:F2}");
-        //}
+        if (showZoomDebugLogs)
+        {
+            Debug.Log($"ZOOM DETAILS | Speed: {speed:F1} | Stretch: {stretch:F2} | " +
+                      $"Target: {targetZoom:F2} | Actual Camera Size: {currentZoom:F2}");
+        }
     }
 }

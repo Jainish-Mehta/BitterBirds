@@ -17,7 +17,7 @@ public class BirdManager : MonoBehaviour
     [Tooltip("How far apart should the birds stand in the waiting line?")]
     public float spacingDistance = 1.5f;
 
-    public Transform slingshotCenter; // <--- FIX: Made public so you can drag it in!
+    public Transform slingshotCenter;
     private CinemachineCamera cineCam;
 
     private List<GameObject> activeBirds = new List<GameObject>();
@@ -27,7 +27,6 @@ public class BirdManager : MonoBehaviour
 
     private void Awake()
     {
-        // Only auto-find if you forgot to drag it in
         if (slingshotCenter == null)
         {
             GameObject centerObj = GameObject.Find("Center");
@@ -47,7 +46,6 @@ public class BirdManager : MonoBehaviour
             return;
         }
 
-        // 1. SPAWN THE BIRDS
         for (int i = 0; i < birdsForThisLevel.Length; i++)
         {
             if (birdsForThisLevel[i] != null)
@@ -65,16 +63,10 @@ public class BirdManager : MonoBehaviour
             }
         }
 
-        // 2. Put them in their starting positions using your Auto-Lineup logic!
         UpdateWaitingLinePositions();
-
-        // 3. Load the first bird!
         LoadNextBird();
     }
 
-    // =========================================================
-    // SWAP BIRDS MECHANIC
-    // =========================================================
     private void Update()
     {
         if (Time.timeScale == 0f) return;
@@ -117,7 +109,6 @@ public class BirdManager : MonoBehaviour
         activeBirds[activeIndex] = newActive;
         activeBirds[clickedIndex] = oldActive;
 
-        // Snap the new bird to the slingshot, and update the waiting line to push the old bird back!
         newActive.transform.position = slingshotCenter.position;
         UpdateWaitingLinePositions();
 
@@ -126,12 +117,17 @@ public class BirdManager : MonoBehaviour
 
         currentActiveBird = newActive;
 
+        // --- THE FIX: SEND THE MULTIPLIER ON SWAP! ---
+        if (GameManager.Instance != null)
+        {
+            BirdData data = currentActiveBird.GetComponent<Movement>().birdData;
+            if (data != null) GameManager.Instance.SetCurrentBirdMultiplier(data.scoreMultiplier);
+        }
+
         if (cineCam != null) cineCam.Follow = currentActiveBird.transform;
 
         if (AudioManager.Instance != null) AudioManager.Instance.PlayBirdSound(AudioManager.Instance.snap);
     }
-
-    // =========================================================
 
     public void LoadNextBird()
     {
@@ -147,11 +143,17 @@ public class BirdManager : MonoBehaviour
         Movement moveScript = currentActiveBird.GetComponent<Movement>();
         if (moveScript != null) moveScript.enabled = true;
 
+        // --- THE FIX: SEND THE MULTIPLIER ON LOAD! ---
+        if (GameManager.Instance != null)
+        {
+            BirdData data = currentActiveBird.GetComponent<Movement>().birdData;
+            if (data != null) GameManager.Instance.SetCurrentBirdMultiplier(data.scoreMultiplier);
+        }
+
         if (cineCam != null) cineCam.Follow = currentActiveBird.transform;
 
         currentBirdIndex++;
 
-        // Make all remaining birds slide forward!
         UpdateWaitingLinePositions();
     }
 

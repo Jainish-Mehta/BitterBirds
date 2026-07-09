@@ -75,9 +75,11 @@ public class DestructibleBlock : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
+
         if (GameManager.Instance != null && blockData != null)
         {
-            GameManager.Instance.AddScore(blockData.pointValue);
+            // Send the name, false (it's not an enemy), points, position, and color!
+            GameManager.Instance.RegisterScoreHit(blockData.blockName, false, blockData.pointValue, transform.position, Color.white);
         }
 
         if (blockData != null && blockData.explosion != null)
@@ -86,7 +88,6 @@ public class DestructibleBlock : MonoBehaviour
             Destroy(effect, 2f);
         }
 
-        // --- THE FIX: Add "0.4f" to play the break/explosion sound at 40% volume ---
         if (AudioManager.Instance != null && blockData != null && blockData.breakSound != null)
         {
             AudioManager.Instance.PlaySound(blockData.breakSound, 0.35f);

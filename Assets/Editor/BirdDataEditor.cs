@@ -7,6 +7,7 @@ public class BirdDataEditor : Editor
 {
     private SerializedProperty birdName;
     private SerializedProperty description;
+    private SerializedProperty scoreMultiplier;
     private SerializedProperty birdSprite;
     private SerializedProperty animatorController;
     private SerializedProperty ability;
@@ -20,6 +21,7 @@ public class BirdDataEditor : Editor
         // Link the properties to the actual variables in BirdData.cs
         birdName = serializedObject.FindProperty("birdName");
         description = serializedObject.FindProperty("description");
+        scoreMultiplier = serializedObject.FindProperty("scoreMultiplier");
         birdSprite = serializedObject.FindProperty("birdSprite");
         animatorController = serializedObject.FindProperty("animatorController");
         ability = serializedObject.FindProperty("ability");
@@ -35,19 +37,19 @@ public class BirdDataEditor : Editor
         serializedObject.Update();
 
         // --- BIRD INFO ---
-        EditorGUILayout.LabelField("Bird Info", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(birdName);
         EditorGUILayout.PropertyField(description);
         EditorGUILayout.Space(10);
 
+        // --- SCORING ---
+        EditorGUILayout.PropertyField(scoreMultiplier, new GUIContent("Score Multiplier"));
+
         // --- VISUALS ---
-        EditorGUILayout.LabelField("Visuals & Animations", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(birdSprite);
         EditorGUILayout.PropertyField(animatorController);
         EditorGUILayout.Space(10);
 
         // --- ABILITIES ---
-        EditorGUILayout.LabelField("Special Ability", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(ability);
 
         // Get the current enum value to decide what to show

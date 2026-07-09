@@ -18,7 +18,7 @@ MonoBehaviour:
   breakSound: {fileID: 8300000, guid: fba856ab4a0ba8448be1ce8365a64819, type: 3}
   impactSound: {fileID: 8300000, guid: 3ac4f7526f139014abc3501985b494f2, type: 3}
   maxHealth: 5
-  pointValue: 200
+  pointValue: 500
   fullHealthSprite: {fileID: -3406266328709109401, guid: 4d98c8ddb5d8b8444af3d7e92fee74a6, type: 3}
   damagedSprite: {fileID: 6214313117284610887, guid: 271c0ae23d7b7664ca888f4f219e6e62, type: 3}
   isTNT: 1
